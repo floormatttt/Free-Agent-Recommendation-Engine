@@ -1,0 +1,97 @@
+Player stats (nba_api)
+    Player Bios
+        Age
+        Height
+        Draft Pick
+        Draft year
+        Games Played
+        Minutes
+        Team
+    Playtype
+        Isolation
+            Freq%
+            PPP
+        PNR handler
+            Freq%
+            PPP
+        PNR roll man
+            Freq%
+            PPP
+        Post up
+            Freq%
+            PPP
+        Spot up
+            Freq%
+            PPP
+        Handoff
+            Freq%
+            PPP
+        Cut
+            Freq%
+            PPP
+        Off screen
+            Freq%
+            PPP
+        Put backs
+            Freq%
+            PPP
+    Defense
+        Perimeter defense
+            %Steals
+            Deflections
+        Rim protection
+            %Blocks (< 6ft)
+            DFGM (< 6ft)
+            DFGA (< 6ft)
+            DFG% (< 6ft)
+            FG% generally on those shots (< 6ft)
+            Diff% (< 6ft)
+    Rebounding
+        DReb%
+        OReb%
+        Def Box Outs
+Team stats (nba_api)
+    Playtype
+        Isolation
+            Freq%
+            PPP
+        PNR handler
+            Freq%
+            PPP
+        PNR roll man
+            Freq%
+            PPP
+        Post up
+            Freq%
+            PPP
+        Spot up
+            Freq%
+            PPP
+        Handoff
+            Freq%
+            PPP
+        Cut
+            Freq%
+            PPP
+        Off screen
+            Freq%
+            PPP
+        Put backs
+            Freq%
+            PPP
+    Defense
+        Quality
+            DEFRTG
+        Perimeter defense
+            Steals
+            Deflections
+        Rim protection
+            Blocks
+            DFGM (< 6ft)
+            DFGA (< 6ft)
+            DFG% (< 6ft)
+            FG% generally on those shots (< 6ft)
+            Diff% (< 6ft)
+    Rebounding
+        DReb%
+        Def Box Outs
