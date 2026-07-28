@@ -1,0 +1,270 @@
+From		To	Player (133)	Pos	Yrs	Value
+$1,992,061,426
+AAV
+$8,586,472
+Bradley Beal	SG	5	$251,019,650	$50,203,930	
+Official
+Zach LaVine	SG	5	$215,159,700	$43,031,940	
+Official
+James Harden	SG	2	$68,640,000	$34,320,000	
+Official
+Deandre Ayton	C	4	$132,929,128	$33,232,282	
+Official
+Jalen Brunson	PG	4	$104,000,000	$26,000,000	
+Official
+Anfernee Simons	SG	4	$100,000,000	$25,000,000	
+Official
+Collin Sexton	PG	4	$70,950,000	$17,737,500	
+Official
+Jusuf Nurkic	C	4	$70,000,000	$17,500,000	
+Official
+Luguentz Dort	SG	5	$82,500,000	$16,500,000	
+Official
+Mitchell Robinson	C	4	$60,000,000	$15,000,000	
+Official
+Tyus Jones	PG	2	$29,000,000	$14,500,000	
+Official
+Marvin Bagley III	PF	3	$37,500,000	$12,500,000	
+Official
+Bobby Portis	PF	4	$48,578,208	$12,144,552	
+Official
+Chris Boucher	PF	3	$35,250,000	$11,750,000	
+Official
+Nicolas Batum	SF	2	$22,554,168	$11,277,084	
+Official
+P.J. Tucker	PF	3	$33,043,500	$11,014,500	
+Official
+Mohamed Bamba	C	2	$20,600,000	$10,300,000	
+Official
+Malik Monk	SG	2	$19,418,049	$9,709,025	
+Official
+Victor Oladipo	SG	2	$18,200,000	$9,100,000	
+Official
+Kyle Anderson	PF	2	$18,000,000	$9,000,000	
+Official
+Gary Payton II	PG	3	$26,145,000	$8,715,000	
+Official
+Nicolas Claxton	C	2	$17,250,000	$8,625,000	
+Official
+Isaiah Hartenstein	C	2	$16,000,000	$8,000,000	
+Official
+Delon Wright	PG	2	$16,000,000	$8,000,000	
+Official
+Cody Martin	SF	4	$31,360,000	$7,840,000	
+Official
+Kevon Looney	C	3	$22,500,000	$7,500,000	
+Official
+Jae’Sean Tate	SF	3	$20,630,434	$6,876,811	
+Official
+Caleb Martin	SF	3	$20,408,850	$6,802,950	
+Official
+Patty Mills	PG	2	$13,281,950	$6,640,975	
+Official
+Bruce Brown Jr.	SG	2	$13,281,950	$6,640,975	
+Official
+Danilo Gallinari	PF	2	$13,281,950	$6,640,975	
+Official
+John Wall	PG	2	$13,281,950	$6,640,975	
+Official
+Lonnie Walker IV	SG	1	$6,479,000	$6,479,000	
+Official
+Joe Ingles	SF	1	$6,479,000	$6,479,000	
+Official
+Otto Porter Jr.	SF	2	$12,300,000	$6,150,000	
+Official
+Ricky Rubio	PG	3	$18,439,026	$6,146,342	
+Official
+JaVale McGee	C	3	$17,202,840	$5,734,280	
+Official
+Jalen Smith	PF	3	$15,131,319	$5,043,773	
+Official
+Donte DiVincenzo	SG	2	$9,225,000	$4,612,500	
+Official
+Dewayne Dedmon	C	2	$9,024,000	$4,512,000	
+Official
+Danuel House Jr.	SF	2	$8,415,250	$4,207,625	
+Official
+Mike Muscala	C/PF	2	$7,000,000	$3,500,000	
+Official
+Andre Drummond	C	2	$6,560,000	$3,280,000	
+Official
+Derrick Jones Jr.	SF/PF	2	$6,560,000	$3,280,000	
+Official
+Kevin Knox	SF	2	$6,000,000	$3,000,000	
+Official
+DeAndre Jordan	C	1	$2,905,851	$2,905,851	
+Official
+Goran Dragic	PG	1	$2,905,851	$2,905,851	
+Official
+Bismack Biyombo	C	1	$2,905,851	$2,905,851	
+Official
+Wesley Matthews	SG	1	$2,905,851	$2,905,851	
+Official
+Udonis Haslem	PF	1	$2,905,851	$2,905,851	
+Official
+Andre Iguodala	SF/SG	1	$2,905,851	$2,905,851	
+Official
+Robin Lopez	C	1	$2,905,851	$2,905,851	
+Official
+Taj Gibson	C	1	$2,905,851	$2,905,851	
+Official
+Austin Rivers	SG	1	$2,905,851	$2,905,851	
+Official
+Blake Griffin	PF	1	$2,905,851	$2,905,851	
+Official
+Serge Ibaka	C	1	$2,905,851	$2,905,851	
+Official
+Jordan Nwora	SF	2	$5,800,000	$2,900,000	
+Official
+Dennis Schröder	PG	1	$2,641,682	$2,641,682	
+Official
+Gorgui Dieng	C	1	$2,641,682	$2,641,682	
+Official
+Matthew Dellavedova	PG	1	$2,628,597	$2,628,597	
+Official
+JaMychal Green	PF	1	$2,628,597	$2,628,597	
+Official
+T.J. Warren	SF	1	$2,628,597	$2,628,597	
+Official
+Montrezl Harrell	C	2	$5,223,516	$2,611,758	
+Official
+Frank Kaminsky	C/PF	1	$2,463,490	$2,463,490	
+Official
+Raul Neto	PG	1	$2,463,490	$2,463,490	
+Official
+Damian Jones	C	2	$4,885,050	$2,442,525	
+Official
+Bryn Forbes	SG	1	$2,298,385	$2,298,385	
+Official
+Rodney McGruder	SG	1	$2,298,385	$2,298,385	
+Official
+Juancho Hernangomez	PF	1	$2,298,385	$2,298,385	
+Official
+Jake Layman	SF	1	$2,298,385	$2,298,385	
+Official
+DJ Wilson	PF	2	$4,546,582	$2,273,291	
+Official
+Luke Kornet	C	2	$4,546,582	$2,273,291	
+Official
+Vlatko Cancar	PF	3	$6,815,324	$2,271,775	
+Official
+Bol Bol	PF	2	$4,400,000	$2,200,000	
+Official
+Joe Wieskamp	SF	2	$4,375,000	$2,187,500	
+Official
+Jevon Carter	PG	2	$4,339,943	$2,169,972	
+Official
+Ryan Arcidiacono	PG	1	$2,133,278	$2,133,278	
+Official
+Frank Jackson	PG	1	$2,133,278	$2,133,278	
+Official
+Josh Jackson	SG	1	$2,133,278	$2,133,278	
+Official
+Damion Lee	SG	1	$2,133,278	$2,133,278	
+Official
+Thomas Bryant	C	1	$2,133,278	$2,133,278	
+Official
+KZ Okpala	SF	2	$3,968,718	$1,984,359	
+Official
+Davon Reed	SG	2	$3,968,718	$1,984,359	
+Official
+Troy Brown Jr.	SF	1	$1,968,185	$1,968,185	
+Official
+Drew Eubanks	C	1	$1,968,175	$1,968,175	
+Official
+Theo Pinson	SG	1	$1,968,175	$1,968,175	
+Official
+Chris Chiozza	PG	1	$1,968,175	$1,968,175	
+Official
+Yuta Watanabe	SF	1	$1,968,175	$1,968,175	
+Official
+Josh Okogie	SG	1	$1,968,175	$1,968,175	
+Official
+Aaron Holiday	PG	1	$1,968,175	$1,968,175	
+Official
+Nathan Knight	PF	2	$3,833,328	$1,916,664	
+Official
+Anthony Gill	PF	2	$3,833,328	$1,916,664	
+Official
+Rayjon Tucker	SF	1	$1,902,133	$1,902,133	
+Official
+Moses Brown	C	1	$1,902,133	$1,902,133	
+Official
+Mychal Mulder	G	1	$1,902,133	$1,902,133	
+Official
+Devontae Cacok	C	1	$1,902,133	$1,902,133	
+Official
+Tyler Cook	PF	1	$1,902,133	$1,902,133	
+Official
+Juan Toscano-Anderson	SF	1	$1,902,133	$1,902,133	
+Official
+Sam Hauser	SF	3	$5,658,206	$1,886,069	
+Official
+Jericho Sims	C	3	$5,658,206	$1,886,069	
+Official
+Nate Hinton	SG	1	$1,836,090	$1,836,090	
+Official
+Luca Vildoza	PG	1	$1,836,090	$1,836,090	
+Official
+Anthony Lamb	SF	1	$1,836,090	$1,836,090	
+Official
+Malik Fitts	PF	1	$1,836,090	$1,836,090	
+Official
+Robert Woodard II	SG	1	$1,836,090	$1,836,090	
+Official
+Brodric Thomas	G	1	$1,836,090	$1,836,090	
+Official
+Skylar Mays	SG	1	$1,836,090	$1,836,090	
+Official
+Elijah Hughes	SF	1	$1,836,090	$1,836,090	
+Official
+Jay Scrubb	SG	1	$1,836,090	$1,836,090	
+Official
+CJ Elleby	SF	1	$1,836,090	$1,836,090	
+Official
+Facundo Campazzo	PG	1	$1,836,090	$1,836,090	
+Official
+Kessler Edwards	SF	2	$3,565,862	$1,782,931	
+Official
+Justin Champagnie	SF	2	$3,565,862	$1,782,931	
+Official
+Matt Ryan	SF	1	$1,637,966	$1,637,966	
+Official
+Jamorko Pickett	SF	1	$1,637,966	$1,637,966	
+Official
+David Johnson	PG	1	$1,637,966	$1,637,966	
+Official
+McKinley Wright IV	PG	1	$1,637,966	$1,637,966	
+Official
+Sharife Cooper	PG	1	$1,637,966	$1,637,966	
+Official
+R.J. Nembhard	PG	1	$0	$0	
+Official
+Duane Washington Jr.	PG	1	$0	$0	
+Official
+Gabe York	SG	1	$0	$0	
+Official
+Xavier Moon	SG	1	$0	$0	
+Official
+Malcolm Hill	G	1	$0	$0	
+Official
+Lindell Wigginton	SG	2	$0	$0	
+Official
+Admiral Schofield	SF	1	$0	$0	
+Official
+Quinndary Weatherspoon	SG	1	$0	$0	
+Official
+Trevelin Queen	SG	1	$0	$0	
+Official
+Ishmail Wainright	SF	1	$0	$0	
+Official
+Trent Forrest	PG	1	$0	$0	
+Official
+Neemias Queta	C	1	$0	$0	
+Official
+David Duke Jr.	SG	1	$0	$0	
+Official
+Jarrett Culver	SG	1	$0	$0	
+Official
+Bruno Fernando	C	1	$0	$0	
+Official

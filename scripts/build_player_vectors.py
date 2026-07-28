@@ -8,7 +8,7 @@ Saved as JSON, keyed by player, with each player's vector itself a
 key-value mapping of category -> score.
 
 Usage:
-    python build_player_vectors.py --season 2025-26
+    python scripts/build_player_vectors.py --season 2025-26
 """
 
 import argparse

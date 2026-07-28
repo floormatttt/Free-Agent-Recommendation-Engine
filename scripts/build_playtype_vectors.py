@@ -14,7 +14,7 @@ defense and rebounding are out of scope for this pass, so the output vector
 covers 9 of the 12 categories.
 
 Usage:
-    python build_playtype_vectors.py --season 2025-26
+    python scripts/build_playtype_vectors.py --season 2025-26
 """
 
 import argparse

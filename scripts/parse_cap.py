@@ -4,7 +4,7 @@ adds a SALARY_PCT_OF_CAP column to every data/salaries/salaries_<season>.csv
 file, computed against that season's salary cap.
 
 Usage:
-    python parse_cap.py
+    python scripts/parse_cap.py
 """
 
 import csv

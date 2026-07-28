@@ -7,14 +7,17 @@ For each player, per-season counting stats are rate-adjusted (per game)
 where needed, then up to 3 seasons are blended using the same
 experience-adjusted time decay as build_playtype_vectors.py.
 
-Before that decay blend, on-court DEF_RATING (the input to the perimeter
-defense block) is run through empirical-Bayes shrinkage toward the
-player's own team's season DEF_RATING, weighted by on-court minutes vs.
-K_SHRINKAGE pseudo-minutes of prior belief -- see load_season(). This
-tames the wild single-season swings a low-minute player's on/off split can
-show; it does not by itself separate individual defense from team scheme
-(the prior is the team's own rating), which is a known limitation, not a
-bug.
+The perimeter-defense block's outcome stat is Defensive Win Shares (Dean
+Oliver's formula, self-computed by scripts/compute_dws.py rather than taken
+from NBA.com's own DEF_WS field -- see that script's docstring for why),
+read as a per-game rate (DWS_PER_GAME, already computed and saved on
+data/player_stats/*.csv by compute_dws.py) at load time -- see
+load_season(). This replaces an earlier on/off DEF_RATING approach that
+leaked team scheme into individual ratings (a bench player on an elite
+defense shrank toward a flattering number regardless of their own play).
+DWS isn't fully team-independent either (it's still partly box-score/team
+derived), but it doesn't have that specific team-prior leak -- see Known
+Limitations in defense.md.
 
 All three blocks use "zero-anchored" z-scores (value/std, no mean
 subtraction -- see build_playtype_vectors.py's docstring for why). Because
@@ -25,7 +28,7 @@ sign-preserving power trick the first draft of this script used --
 ordinary exponentiation is safe throughout.
 
 Usage:
-    python build_defense_vectors.py --season 2025-26
+    python scripts/build_defense_vectors.py --season 2025-26
 """
 
 import argparse
@@ -33,27 +36,15 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from nba_api.stats.static import teams as static_teams
 
 DATA_DIR = Path("data")
 PLAYER_STATS_DIR = DATA_DIR / "player_stats"
-TEAM_STATS_DIR = DATA_DIR / "team_stats"
 OUT_DIR = DATA_DIR / "player_vectors_full"
-
-TEAM_ABBREV_BY_ID = {t["id"]: t["abbreviation"] for t in static_teams.get_teams()}
-
-# Empirical-Bayes shrinkage for on-court DEF_RATING: a player's raw on/off
-# sample is noisy at low minutes (a few possessions can swing it wildly), so
-# it's blended with their team's season DEF_RATING as a prior, weighted by
-# on-court minutes vs. this many "pseudo-minutes" of prior belief. A player
-# with far fewer than K_SHRINKAGE on-court minutes ends up close to their
-# team's average; a full-season starter is barely pulled off their own mark.
-K_SHRINKAGE = 500.0
 
 # raw column name -> internal name used while blending. The three "_PG"
 # entries are computed from a counting stat divided by GP at load time.
-# ON_COURT_DEF_RATING is handled separately (see load_season) since it needs
-# shrinkage, not a plain rename.
+# DWS_PER_GAME is already a rate (computed by compute_dws.py), so it's
+# included directly in ALL_STAT_COLS without needing an entry here.
 RATE_COLUMNS = {
     "PCT_STEALS": "STL_PCT",
     "PCT_BLOCKS": "BLK_PCT",
@@ -68,7 +59,7 @@ PER_GAME_COLUMNS = {
     "DEFLECTIONS": "DEFLECTIONS_PG",
     "DEF_BOXOUTS": "BOXOUTS_PG",
 }
-ALL_STAT_COLS = list(RATE_COLUMNS.values()) + list(PER_GAME_COLUMNS.values()) + ["ON_DRTG"]
+ALL_STAT_COLS = list(RATE_COLUMNS.values()) + list(PER_GAME_COLUMNS.values()) + ["DWS_PER_GAME"]
 
 # Career-stage decay -- same shape as build_playtype_vectors.py: recency
 # bias is strongest at the start/end of a career, weakest at the prime.
@@ -89,17 +80,6 @@ def season_offset(season: str, back: int) -> str:
     return f"{start}-{end_yy:02d}"
 
 
-def load_team_drtg(season: str):
-    """Each team's season DEF_RATING, indexed by team abbreviation -- the
-    shrinkage prior for on-court DEF_RATING."""
-    path = TEAM_STATS_DIR / f"team_stats_{season}.csv"
-    if not path.exists():
-        return None
-    team_df = pd.read_csv(path, encoding="utf-8")
-    team_df["TEAM"] = team_df["TEAM_ID"].map(TEAM_ABBREV_BY_ID)
-    return team_df.set_index("TEAM")["DEF_RATING"]
-
-
 def load_season(season: str):
     path = PLAYER_STATS_DIR / f"player_stats_{season}.csv"
     if not path.exists():
@@ -110,18 +90,14 @@ def load_season(season: str):
     for raw_col, pg_col in PER_GAME_COLUMNS.items():
         df[pg_col] = df[raw_col] / gp
 
-    team_drtg = load_team_drtg(season)
-    team_prior = df["TEAM"].map(team_drtg) if team_drtg is not None else pd.Series(np.nan, index=df.index)
-    # a team's own abbreviation is always in its own season's team_stats, so
-    # this only falls back to the league mean if that lookup is somehow
-    # missing (e.g. a historical abbreviation mismatch).
-    team_prior = team_prior.fillna(team_prior.mean())
-
-    on_court_min = df["ON_COURT_MIN"].fillna(0.0)
-    on_drtg_raw = df["ON_COURT_DEF_RATING"].fillna(team_prior)
-    df["ON_DRTG"] = (on_court_min * on_drtg_raw + K_SHRINKAGE * team_prior) / (
-        on_court_min + K_SHRINKAGE
-    )
+    # DWS_PER_GAME is computed and saved by compute_dws.py (Dean Oliver's
+    # formula), not derived here. If a season's player_stats file predates
+    # that script (or the underlying DEF_RATING/team inputs were
+    # unavailable for that season), the column is simply absent; leaving it
+    # NaN lets the decay blend below renormalize across whichever of a
+    # player's available seasons do have it.
+    if "DWS_PER_GAME" not in df.columns:
+        df["DWS_PER_GAME"] = np.nan
 
     return df
 
@@ -173,8 +149,6 @@ def build_vectors(season: str) -> pd.DataFrame:
         experience = experience_for(bio, season_start_year, len(available))
         d = decay_strength(experience)
         raw_w = {i: np.exp(-d * i) for i in available}
-        wsum = sum(raw_w.values())
-        weights = {i: w / wsum for i, w in raw_w.items()}
 
         out = {
             "PLAYER_ID": pid,
@@ -183,22 +157,38 @@ def build_vectors(season: str) -> pd.DataFrame:
             "EXPERIENCE_YRS": experience,
         }
 
-        decayed = {c: 0.0 for c in ALL_STAT_COLS}
+        # season -> row/frame, looked up once per player rather than per stat.
+        season_lookup = {}
         for i in available:
             if i == 0:
-                row, frame = bio, current
+                season_lookup[i] = (bio, current)
             else:
                 frame = prior_frames[i - 1]
                 row = prior_by_id[i - 1].loc[pid] if pid in prior_by_id[i - 1].index else None
+                season_lookup[i] = (row, frame)
 
-            for col in ALL_STAT_COLS:
+        # Per-stat weighted blend, renormalized over only the seasons where
+        # that stat is actually available -- most stats are available in
+        # every season, but a handful of historical seasons have no DEF_WS
+        # at all (see load_season), and those seasons should drop out of
+        # DEF_WS_PER48's blend rather than pull it toward 0/NaN.
+        for col in ALL_STAT_COLS:
+            vals = {}
+            for i in available:
+                row, frame = season_lookup[i]
                 val = row.get(col) if row is not None else None
                 if row is None or pd.isna(val):
                     val = season_means[id(frame)][col]
-                decayed[col] += weights[i] * val
+                if pd.notna(val):
+                    vals[i] = val
 
-        for col in ALL_STAT_COLS:
-            out[f"{col}_DECAYED"] = decayed[col]
+            if not vals:
+                out[f"{col}_DECAYED"] = np.nan
+                continue
+
+            w = {i: raw_w[i] for i in vals}
+            wsum = sum(w.values())
+            out[f"{col}_DECAYED"] = sum((w[i] / wsum) * vals[i] for i in vals)
 
         rows.append(out)
 
@@ -210,18 +200,18 @@ def build_vectors(season: str) -> pd.DataFrame:
     stl_pct_z = zero_anchored_z(df["STL_PCT_DECAYED"])
     activity_score = contested_3pt_z**0.35 * deflections_z**0.35 * stl_pct_z**0.30
 
-    on_drtg = df["ON_DRTG_DECAYED"]
-    adjusted_drtg = on_drtg - (0.20 * activity_score * on_drtg.std(ddof=0))
-    league_avg_drtg = adjusted_drtg.mean()
-    adj_std = adjusted_drtg.std(ddof=0)
-    adjusted_drtg_z = (league_avg_drtg - adjusted_drtg) / adj_std if adj_std else adjusted_drtg * 0.0
-    perimeter_d_block = adjusted_drtg_z - adjusted_drtg_z.min()
+    dws_per_game = df["DWS_PER_GAME_DECAYED"]
+    adjusted_dws = dws_per_game + (0.20 * activity_score * dws_per_game.std(ddof=0))
+    league_avg_dws = adjusted_dws.mean()
+    adj_std = adjusted_dws.std(ddof=0)
+    adjusted_dws_z = (adjusted_dws - league_avg_dws) / adj_std if adj_std else adjusted_dws * 0.0
+    perimeter_d_block = adjusted_dws_z - adjusted_dws_z.min()
 
     df["CONTESTED_3PT_Z"] = contested_3pt_z
     df["DEFLECTIONS_Z"] = deflections_z
     df["STL_PCT_Z"] = stl_pct_z
     df["ACTIVITY_SCORE"] = activity_score
-    df["ADJUSTED_DRTG"] = adjusted_drtg
+    df["ADJUSTED_DWS_PER_GAME"] = adjusted_dws
     df["PERIMETER_D_BLOCK"] = perimeter_d_block
 
     # ---- Rim protection block ----

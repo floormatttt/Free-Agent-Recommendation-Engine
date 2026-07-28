@@ -6,7 +6,7 @@ Output:
     data/team_stats_<season>.csv
 
 Usage:
-    python pull_nba_data.py --season 2023-24 --season-type "Regular Season"
+    python scripts/pull_nba_data.py --season 2023-24 --season-type "Regular Season"
 """
 
 import argparse
@@ -24,9 +24,7 @@ from nba_api.stats.endpoints import (
     leaguehustlestatsplayer,
     leaguehustlestatsteam,
     synergyplaytypes,
-    teamplayeronoffsummary,
 )
-from nba_api.stats.static import teams as static_teams
 
 REQUEST_DELAY = 0.6  # seconds between calls, be polite to stats.nba.com
 
@@ -108,39 +106,6 @@ def fetch_playtypes(player_or_team: str, season: str, season_type: str) -> pd.Da
     return merged
 
 
-def fetch_on_court_def_rating(season: str, season_type: str) -> pd.DataFrame:
-    """On-court DEF_RATING per player, for the perimeter-defense block in
-    defense.md. TeamPlayerOnOffSummary is a per-team endpoint, so this loops
-    over all 30 teams; a traded player ends up with one row per team stint,
-    which are combined into a single minutes-weighted average."""
-    rows = []
-    for team in static_teams.get_teams():
-        resp = teamplayeronoffsummary.TeamPlayerOnOffSummary(
-            team_id=team["id"],
-            season=season,
-            season_type_all_star=season_type,
-            measure_type_detailed_defense="Advanced",
-        )
-        on_court = resp.get_data_frames()[1]
-        rows.append(on_court[["VS_PLAYER_ID", "MIN", "DEF_RATING"]])
-        time.sleep(REQUEST_DELAY)
-
-    combined = pd.concat(rows, ignore_index=True).rename(columns={"VS_PLAYER_ID": "PLAYER_ID"})
-
-    def weighted_avg(g: pd.DataFrame) -> pd.Series:
-        total_min = g["MIN"].sum()
-        if total_min == 0:
-            return pd.Series({"ON_COURT_DEF_RATING": g["DEF_RATING"].mean(), "ON_COURT_MIN": 0.0})
-        return pd.Series(
-            {
-                "ON_COURT_DEF_RATING": (g["DEF_RATING"] * g["MIN"]).sum() / total_min,
-                "ON_COURT_MIN": total_min,
-            }
-        )
-
-    return combined.groupby("PLAYER_ID", as_index=False).apply(weighted_avg, include_groups=False)
-
-
 def fetch_player_data(season: str, season_type: str) -> pd.DataFrame:
     print("Fetching player bio stats...")
     bios = leaguedashplayerbiostats.LeagueDashPlayerBioStats(
@@ -168,11 +133,18 @@ def fetch_player_data(season: str, season_type: str) -> pd.DataFrame:
     base = base[["PLAYER_ID", "MIN"]]
     time.sleep(REQUEST_DELAY)
 
-    print("Fetching player advanced stats (rebounding %)...")
+    print("Fetching player advanced stats (rebounding %, DEF_RATING)...")
     adv = leaguedashplayerstats.LeagueDashPlayerStats(
         season=season, season_type_all_star=season_type, measure_type_detailed_defense="Advanced"
     ).get_data_frames()[0]
-    adv = adv[["PLAYER_ID", "OREB_PCT", "DREB_PCT"]]
+    # DEF_RATING here is NBA.com's individual defensive-rating estimate (an
+    # Oliver-style formula incorporating team defense + a player's own
+    # steals/blocks/rebounds/fouls), not an on-court/off-court split -- it's
+    # the DRtg input to the Defensive Win Shares formula in defense.md.
+    # Sourced from "Advanced" rather than the "Defense" measure type because
+    # the latter returns a fully empty response for several historical
+    # seasons (confirmed via repeated retries); "Advanced" has no such gaps.
+    adv = adv[["PLAYER_ID", "OREB_PCT", "DREB_PCT", "DEF_RATING"]]
     time.sleep(REQUEST_DELAY)
 
     print("Fetching player usage stats (% steals, % blocks)...")
@@ -213,28 +185,27 @@ def fetch_player_data(season: str, season_type: str) -> pd.DataFrame:
     print("Fetching player play type stats (this takes a while, 9 calls)...")
     playtypes = fetch_playtypes("P", season, season_type)
 
-    print("Fetching on-court DEF_RATING (this takes a while, 30 calls)...")
-    on_off = fetch_on_court_def_rating(season, season_type)
-
     df = bios
-    for other in (base, adv, usage, hustle, rim, playtypes, on_off):
+    for other in (base, adv, usage, hustle, rim, playtypes):
         df = df.merge(other, on="PLAYER_ID", how="left")
     return df
 
 
 def fetch_team_data(season: str, season_type: str) -> pd.DataFrame:
-    print("Fetching team base stats (blocks)...")
+    print("Fetching team base stats (GP, steals, blocks, points)...")
     base = leaguedashteamstats.LeagueDashTeamStats(
         season=season, season_type_all_star=season_type, measure_type_detailed_defense="Base"
     ).get_data_frames()[0]
-    base = base[["TEAM_ID", "TEAM_NAME", "BLK"]]
+    base = base[["TEAM_ID", "TEAM_NAME", "GP", "STL", "BLK", "PTS", "MIN"]]
     time.sleep(REQUEST_DELAY)
 
-    print("Fetching team advanced stats (def rating, rebounding %)...")
+    print("Fetching team advanced stats (def rating, rebounding %, pace, possessions)...")
     adv = leaguedashteamstats.LeagueDashTeamStats(
         season=season, season_type_all_star=season_type, measure_type_detailed_defense="Advanced"
     ).get_data_frames()[0]
-    adv = adv[["TEAM_ID", "DEF_RATING", "DREB_PCT"]]
+    # POSS and PACE feed the Defensive Win Shares formula in defense.md
+    # (team defensive possessions and pace).
+    adv = adv[["TEAM_ID", "DEF_RATING", "OREB_PCT", "DREB_PCT", "POSS", "PACE"]]
     time.sleep(REQUEST_DELAY)
 
     print("Fetching team hustle stats (deflections, contested 3s, def box outs)...")

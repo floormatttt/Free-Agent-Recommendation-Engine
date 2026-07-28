@@ -20,7 +20,8 @@ Pulls the dataset in Data.txt via `nba_api`, per season, into `data/player_stats
 | Rim protection (DFGM/DFGA/DFG%/opp FG%/Diff%, <6ft) | `LeagueDashPtDefend` / `LeagueDashPtTeamDefend` |
 | Playtype Freq%/PPP (9 types) | `SynergyPlayTypes` |
 | On-court DEF_RATING, on-court MIN | `TeamPlayerOnOffSummary` (looped over all 30 teams) |
-| Team DEF_RATING, team BLK | `LeagueDashTeamStats` (Base/Advanced) |
+| Team GP, STL, BLK | `LeagueDashTeamStats` (Base) |
+| Team DEF_RATING, OREB_PCT, DREB_PCT | `LeagueDashTeamStats` (Advanced) |
 
 Team IDs for the on-court DRTG loop come from `nba_api.stats.static.teams` (a local list, no extra API calls).
 
@@ -74,3 +75,4 @@ Also adds `SALARY_PCT_OF_CAP` to every `data/salaries/salaries_<season>.csv` fil
 - Pulled 2014-15 and 2015-16 to extend the decay window for the earliest seasons; discovered and documented the hustle-stat coverage gap in both.
 - Built the `parse-nba-salary-list` skill; applied it for 2016-17 through 2026-27.
 - Built `parse_cap.py`; parsed 19 seasons of cap history and added `SALARY_PCT_OF_CAP` to all 11 salary files.
+- Edited `fetch_team_data` to also pull team `GP`/`STL` (Base) and `OREB_PCT` (Advanced), feeding team.md's team-vector pipeline (see vector_process.md) once it pivoted to computing directly from team-level stats. Re-pulled all 8 seasons of `data/team_stats/` with the new columns.

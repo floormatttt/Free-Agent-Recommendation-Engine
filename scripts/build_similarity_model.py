@@ -1,5 +1,5 @@
 """
-Builds the Similar Player Model described in similaritymodel.md, across
+Builds the Similar Player Model described in docs/similarity_model.md, across
 every player-season vector we have on file (one player who appears in
 multiple seasons contributes one row per season).
 
@@ -39,7 +39,7 @@ two player-seasons is:
 
 A larger R makes the metric more forgiving of differences along the
 quality axis and relatively more sensitive to differences in shape/style
--- the intent per similaritymodel.md is to find players who play a similar
+-- the intent per docs/similarity_model.md is to find players who play a similar
 *style*, not just players of similar overall quality.
 
 Standardization (z-scoring each of the 12 categories to mean 0, std 1) is
@@ -50,7 +50,7 @@ same scale and cross-season comparisons would be meaningless.
 In addition to the top-10 display, PREDICTED_SALARY_PCT_OF_CAP is computed
 via Nadaraya-Watson kernel regression over the *entire* pool (every
 player-season with a known salary, not just the top 10), per
-contractprediction.md. This exists because averaging only 10 neighbors'
+docs/similarity_model.md. This exists because averaging only 10 neighbors'
 contracts caps the estimate at the highest of those 10 specific salaries
 -- for a true outlier (Jokić, Curry), even the closest real comps sit at a
 meaningfully large distance, so the top-10 average systematically
@@ -60,7 +60,7 @@ a wider tier of moderately-similar high-quality players still nudges the
 estimate for an outlier instead of being ignored outright.
 
 Usage:
-    python build_similarity_model.py --ratio 4 --bandwidth auto --kernel gaussian
+    python scripts/build_similarity_model.py --ratio 4 --bandwidth auto --kernel gaussian
 """
 
 import argparse
@@ -161,7 +161,7 @@ def build_model(ratio: float, bandwidth: float | None = None, kernel: str = "gau
 
     if bandwidth is None:
         # median of the unique off-diagonal pairwise distances, per
-        # contractprediction.md's default
+        # docs/similarity_model.md's default
         bandwidth = float(np.median(distance[np.triu_indices(n, k=1)]))
     kernel_fn = KERNELS[kernel]
 
@@ -202,7 +202,7 @@ def build_model(ratio: float, bandwidth: float | None = None, kernel: str = "gau
         weighted_avg_contract_pct = weighted_pct_sum / weight_sum if weight_sum > 0 else None
 
         # kernel regression over the *entire* pool (every known-salary
-        # player-season, not just the top 10) -- see contractprediction.md
+        # player-season, not just the top 10) -- see docs/similarity_model.md
         eligible = known_mask & (player_id_arr != r["PLAYER_ID"])
         kernel_weights = kernel_fn(distance[i, eligible] / bandwidth)
         kw_sum = kernel_weights.sum()
