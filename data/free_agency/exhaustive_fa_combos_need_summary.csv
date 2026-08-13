@@ -1,0 +1,29 @@
+TEAM,K,NEED_BEFORE_WEIGHTED_COMPOSITE,BEST_COMBO,BEST_WEIGHTED_PCT_INCREASE,WORST_COMBO,WORST_WEIGHTED_PCT_INCREASE,N_COMBOS
+ATL,1,0.524,LeBron James,7.07,Mitchell Robinson,-3.26,47
+BKN,1,0.608,LeBron James,12.06,Pat Spencer,-2.68,47
+BOS,4,0.433,Rui Hachimura + Nikola Vučević + LeBron James + Tobias Harris,13.8,Mitchell Robinson + Kelly Oubre Jr. + Collin Sexton + Pat Spencer,-12.43,178365
+CHA,2,0.553,LeBron James + Tobias Harris,17.51,Mitchell Robinson + Jaxson Hayes,-6.67,1081
+CHI,3,0.646,Tim Hardaway Jr. + LeBron James + Tobias Harris,67.92,Keon Ellis + Pat Spencer + Josh Okogie,-7.72,16215
+CLE,1,0.455,Rui Hachimura,7.04,Collin Sexton,-4.3,47
+DAL,1,0.511,Tobias Harris,6.15,Collin Sexton,-2.86,47
+DEN,2,0.509,Rui Hachimura + Tobias Harris,13.54,Collin Sexton + Pat Spencer,-6.78,1081
+DET,1,0.432,LeBron James,4.41,Mitchell Robinson,-4.44,47
+HOU,5,0.404,Rui Hachimura + Kam Jones + Dean Wade + Luke Kennard + Tobias Harris,10.47,Mitchell Robinson + Kelly Oubre Jr. + Collin Sexton + Caleb Love + Pat Spencer,-10.27,1533939
+IND,2,0.503,Rui Hachimura + Tobias Harris,12.33,Collin Sexton + Pat Spencer,-6.37,1081
+LAC,1,0.429,Tobias Harris,5.02,Kelly Oubre Jr.,-3.85,47
+LAL,7,0.458,Rui Hachimura + Matisse Thybulle + Quinten Post + Kam Jones + LeBron James + Dean Wade + Tobias Harris,23.5,Jalen Wilson + Bogdan Bogdanović + Kelly Oubre Jr. + Collin Sexton + Caleb Love + Anfernee Simons + Pat Spencer,-21.34,62891499
+MEM,1,0.561,LeBron James,9.6,Pat Spencer,-3.44,47
+MIA,2,0.412,Rui Hachimura + Luke Kennard,5.92,Mitchell Robinson + Kelly Oubre Jr.,-7.73,1081
+MIL,1,0.539,Tobias Harris,7.38,Collin Sexton,-2.47,47
+MIN,1,0.462,LeBron James,7.75,Mitchell Robinson,-4.15,47
+NOP,2,0.574,Rui Hachimura + Tobias Harris,17.32,Collin Sexton + Caleb Love,-5.62,1081
+NYK,1,0.462,Rui Hachimura,4.8,Collin Sexton,-3.89,47
+OKC,1,0.286,Rui Hachimura,3.18,Collin Sexton,-4.51,47
+ORL,1,0.474,Rui Hachimura,5.33,Mitchell Robinson,-4.11,47
+PHI,7,0.489,Norman Powell + Rui Hachimura + Nikola Vučević + LeBron James + Dean Wade + Luke Kennard + Tobias Harris,20.28,Mitchell Robinson + Kelly Oubre Jr. + Collin Sexton + Caleb Love + Anfernee Simons + Pat Spencer + Kyle Anderson,-13.81,62891499
+PHX,2,0.539,Rui Hachimura + Tobias Harris,14.48,Mitchell Robinson + Collin Sexton,-5.88,1081
+POR,2,0.506,LeBron James + Tobias Harris,14.07,Mitchell Robinson + Pat Spencer,-6.54,1081
+SAC,2,0.617,Rui Hachimura + Tobias Harris,31.35,Caleb Love + Pat Spencer,-4.56,1081
+SAS,1,0.428,LeBron James,4.66,Mitchell Robinson,-4.03,47
+TOR,2,0.416,Rui Hachimura + Tobias Harris,6.34,Mitchell Robinson + Collin Sexton,-6.97,1081
+UTA,5,0.568,Rui Hachimura + LeBron James + Dean Wade + Tobias Harris + Josh Okogie,51.83,Jalen Wilson + Collin Sexton + Caleb Love + Pat Spencer + Branden Carlson,-6.48,1533939

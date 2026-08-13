@@ -163,7 +163,7 @@ def main():
         "enet_coef_by_fold": enet_coef_df.reset_index().rename(columns={"index": "SEASON"}).to_dict(orient="records"),
         "enet_coef_mean": enet_coef_df.mean().to_dict(),
     }
-    out_path = Path(__file__).parent.parent / "data" / "win_pct_model_results.json"
+    out_path = Path(__file__).parent.parent / "data" / "win_pct_model" / "win_pct_model_results.json"
     out_path.write_text(json.dumps(out, indent=2), encoding="utf-8")
     print(f"\nWrote {out_path}")
 

@@ -276,7 +276,7 @@ def main():
         "ridge_coef_mean_reconstructed_ensemble": ens_coef_df.mean().to_dict(),
         "blend_calibration": blend_preds.to_dict(orient="records"),
     }
-    out_path = DATA_DIR / "roster_reconstructed_win_pct_results.json"
+    out_path = DATA_DIR / "win_pct_model" / "roster_reconstructed_win_pct_results.json"
     out_path.write_text(json.dumps(out, indent=2), encoding="utf-8")
     print(f"\nWrote {out_path}")
 

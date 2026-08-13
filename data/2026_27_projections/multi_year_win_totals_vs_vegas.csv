@@ -1,0 +1,31 @@
+TEAM,TEAM_NAME,PROJECTED_WINS,VEGAS_TOTAL,DIFF,OVER_FAIR_PROB,VIG
+LAC,Los Angeles Clippers,46.9,28.5,18.4,0.4948,0.0587
+GSW,Golden State Warriors,55.6,39.5,16.1,0.4843,0.0576
+OKC,Oklahoma City Thunder,72.2,60.5,11.7,0.4843,0.0576
+SAC,Sacramento Kings,33.0,21.5,11.5,0.5052,0.0587
+MIL,Milwaukee Bucks,34.1,24.5,9.6,0.5157,0.0576
+HOU,Houston Rockets,56.1,46.5,9.6,0.4899,0.0693
+ORL,Orlando Magic,54.0,44.5,9.5,0.4843,0.0576
+TOR,Toronto Raptors,53.3,45.5,7.8,0.5052,0.0587
+CLE,Cleveland Cavaliers,54.2,47.5,6.7,0.4843,0.0576
+MEM,Memphis Grizzlies,33.4,28.5,4.9,0.4948,0.0587
+DAL,Dallas Mavericks,37.6,35.5,2.1,0.4737,0.0556
+NOP,New Orleans Pelicans,30.3,28.5,1.8,0.4948,0.0587
+PHX,Phoenix Suns,39.2,39.5,-0.3,0.4843,0.0576
+DET,Detroit Pistons,49.0,49.5,-0.5,0.4843,0.0576
+CHA,Charlotte Hornets,36.7,37.5,-0.8,0.4843,0.0576
+MIA,Miami Heat,44.5,45.5,-1.0,0.4843,0.0576
+LAL,Los Angeles Lakers,44.4,45.5,-1.1,0.4843,0.0576
+POR,Portland Trail Blazers,41.8,43.5,-1.7,0.4843,0.0576
+BKN,Brooklyn Nets,22.2,24.5,-2.3,0.4843,0.0576
+IND,Indiana Pacers,41.0,43.5,-2.5,0.5157,0.0576
+MIN,Minnesota Timberwolves,45.4,48.5,-3.1,0.4948,0.0587
+BOS,Boston Celtics,46.1,49.5,-3.4,0.5157,0.0576
+CHI,Chicago Bulls,25.7,29.5,-3.8,0.4948,0.0587
+NYK,New York Knicks,47.6,51.5,-3.9,0.5052,0.0587
+PHI,Philadelphia 76ers,44.6,50.5,-5.9,0.4797,0.0678
+UTA,Utah Jazz,30.3,36.5,-6.2,0.5157,0.0576
+ATL,Atlanta Hawks,37.4,44.5,-7.1,0.4797,0.0678
+DEN,Denver Nuggets,41.1,48.5,-7.4,0.4843,0.0576
+SAS,San Antonio Spurs,51.7,60.5,-8.8,0.4843,0.0576
+WAS,Washington Wizards,23.8,35.5,-11.7,0.4843,0.0576

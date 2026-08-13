@@ -138,6 +138,32 @@ Before landing on v3, the user asked for a non-supervised-regression alternative
 
 ---
 
+## Did the model call it better than the GMs? (`evaluate_contract_vs_nba.py`)
+
+A different question from `free_agent_evaluation.md`'s MAE/corr comparison: not "how close is the prediction to the actual contract," but "was the model's pre-signing prediction closer to how the player actually went on to perform than the real contract was" -- a non-circular check, since it introduces a third yardstick (hindsight value) rather than just comparing prediction to signed dollars.
+
+**Hindsight value**: re-runs the identical LOSO-trained XGBoost model (same `CATEGORIES`, `FEATURE_COLUMNS`, `XGB_PARAMS`, `MINUTES_THRESHOLD` as v3 above) but feeds it the player's real `TARGET_SEASON` vector/usage/awards instead of the pre-signing `PREV_SEASON` inputs -- "what would the model have paid, knowing exactly how they were about to play." The same minutes-reliability gate is applied, gated on `PREV_SEASON` minutes for the actual prediction and `TARGET_SEASON` minutes for the hindsight value.
+
+For every row with a played `TARGET_SEASON` (excludes the current, not-yet-played free-agent class): `MODEL_ERR_PP = |PREDICTED - HINDSIGHT|`, `NBA_ERR_PP = |ACTUAL - HINDSIGHT|`, `MODEL_CLOSER = MODEL_ERR_PP < NBA_ERR_PP`. A Wilcoxon signed-rank test is run on the paired `|error|` gap.
+
+Output: `data/free_agency/contract_vs_nba_eval.csv` -- 677 rows: `PLAYER_ID, PLAYER_NAME, PREV_SEASON, TARGET_SEASON, ACTUAL_SALARY_PCT_OF_CAP, PREDICTED_PCT, HINDSIGHT_PCT, MODEL_ERR_PP, NBA_ERR_PP, MODEL_CLOSER`.
+
+**Results** (computed directly from the CSV):
+
+| Target season | Model MAE (pp) | NBA MAE (pp) | Model win rate |
+|---|---|---|---|
+| 2019-20 | 2.643 | 2.795 | 50.0% |
+| 2020-21 | 2.634 | 2.962 | 52.7% |
+| 2021-22 | 3.810 | 2.808 | 42.5% |
+| 2022-23 | 2.235 | 2.716 | 50.6% |
+| 2023-24 | 2.737 | 2.821 | 48.0% |
+| 2024-25 | 2.464 | 2.517 | 47.0% |
+| 2025-26 | 2.604 | 2.200 | 46.2% |
+
+Pooled model win rate is ~48.0% across all 677 rows -- **the model is not consistently closer to hindsight value than the real signed contracts were**; roughly a coin flip overall, and worse than the market in several seasons (notably 2021-22 and 2025-26). This is a materially different, more skeptical read than `free_agent_evaluation.md`'s MAE/corr comparison against the similarity model, because it benchmarks against real GM decisions rather than against a different model.
+
+---
+
 ## Known Limitations
 
 - **Still overpredicts some below-market/"discount" deals**: the model only sees on-court production, not contract-negotiation dynamics -- v3's worst misses (see `free_agent_evaluation.md`) are still players who took a hometown discount or a prove-it deal. Neither the free-agent-training change nor the minutes gate targets this directly (confirmed: the worst single miss barely moved, 20.1pp before the minutes gate, 21.5pp after -- the gate fixes small errors on low-minutes players, not this).

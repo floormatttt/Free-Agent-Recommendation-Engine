@@ -1,0 +1,588 @@
+TEAM,PLAYER_NAME,PLAYER_ID,POSITION,HEIGHT,WEIGHT,AGE,EXP,SCHOOL,HOW_ACQUIRED
+ATL,Keshon Gilbert,1642933,G,6-4,200,23.0,1,Iowa State,Signed on 03/04/26
+ATL,Jonathan Kuminga,1630228,F,6-7,225,23.0,5,NBA G League Ignite,Traded from GSW on 02/05/26
+ATL,RayJ Dennis,1642484,G,6-1,180,25.0,2,Baylor,Signed on 12/31/25
+ATL,Jalen Johnson,1630552,F,6-8,219,24.0,5,Duke,#20 Pick in 2021 Draft
+ATL,Keaton Wallace,1630811,G,6-3,185,27.0,2,Texas-San Antonio,Signed on 09/29/23
+ATL,CJ McCollum,203468,G,6-3,190,34.0,13,Lehigh,Traded from WAS on 01/09/26
+ATL,Gabe Vincent,1629216,G,6-2,200,30.0,7,California-Santa Barbara,Traded from LAL on 02/05/26
+ATL,Kingston Flemings,1643412,G,6-4,190,19.0,R,Houston,#8 Pick in 2026 Draft
+ATL,Dyson Daniels,1630700,G,6-7,199,23.0,4,NBA G League Ignite,Traded from NOP on 07/06/24
+ATL,Luguentz Dort,1629652,G,6-4,220,27.0,7,Arizona State,Traded from OKC on 07/19/26
+ATL,Nickeil Alexander-Walker,1629638,G,6-5,205,27.0,7,Virginia Tech,Traded from MIN on 07/06/25
+ATL,Buddy Hield,1627741,G,6-4,220,33.0,10,Oklahoma,Traded from GSW on 02/05/26
+ATL,Ryan Nembhard,1642948,G,5-11,180,23.0,1,Gonzaga,Traded from DAL on 07/19/26
+ATL,Henri Veesaar,1643539,C,7-0,225,22.0,R,North Carolina,Draft Rights Traded from LAC on 06/24/26
+ATL,Tony Bradley,1628396,C-F,6-10,248,28.0,8,North Carolina,Signed on 04/06/26
+ATL,Asa Newell,1642854,F,6-10,220,20.0,1,Georgia,Draft Rights Traded from NOP on 06/25/25
+ATL,Onyeka Okongwu,1630168,F-C,6-10,240,25.0,6,Southern California,#6 Pick in 2020 Draft
+ATL,Mouhamed Gueye,1631243,F,6-11,210,23.0,3,Washington State,Draft Rights Traded from BOS on 06/28/23
+ATL,Zuby Ejiofor,1643544,F,6-9,240,22.0,R,St. John's,#23 Pick in 2026 Draft
+ATL,Aaron Wiggins,1630598,G,6-5,190,27.0,5,Maryland,Traded from OKC on 07/06/26
+ATL,Jalen Wilson,1630592,F,6-6,220,25.0,3,Kansas,Signed on 07/22/26
+ATL,Devin Carter,1642269,G,6-2,195,24.0,2,Providence,Traded from SAC on 06/30/26
+ATL,Corey Kispert,1630557,F,6-6,224,27.0,5,Gonzaga,Traded from WAS on 01/09/26
+ATL,Jock Landale,1629111,C,6-11,255,30.0,5,St. Mary's,Traded from UTA on 02/05/26
+BKN,Josh Minott,1631169,F,6-8,205,23.0,4,Memphis,Traded from BOS on 02/05/26
+BKN,Mikel Brown Jr.,1643414,G,6-5,190,20.0,R,Louisville,#6 Pick in 2026 Draft
+BKN,Danny Wolf,1642874,F,6-11,250,22.0,1,Michigan,#27 Pick in 2025 Draft
+BKN,Drake Powell,1642962,G-F,6-5,195,20.0,1,North Carolina,Draft Rights Traded from ATL on 07/07/25
+BKN,Egor Dëmin,1642856,G,6-8,200,20.0,1,Brigham Young,#8 Pick in 2025 Draft
+BKN,Joshua Jefferson,1643538,F,6-9,240,22.0,R,Iowa State,Draft Rights Traded from MIN on 07/10/26
+BKN,E.J. Liddell,1630604,F,6-6,240,25.0,3,Ohio State,Signed on 09/03/25
+BKN,Tyson Etienne,1630623,G,6-0,200,26.0,2,Wichita State,Signed on 09/10/24
+BKN,Nolan Traore,1642849,G,6-3,185,20.0,1,Saint-Quentin,#19 Pick in 2025 Draft
+BKN,Keon Ellis,1631165,G,6-4,175,26.0,4,Alabama,Signed on 07/06/26
+BKN,Terance Mann,1629611,G-F,6-6,215,29.0,7,Florida State,Traded from ATL on 07/07/25
+BKN,Michael Porter Jr.,1629008,F,6-10,218,28.0,7,Missouri,Traded from DEN on 07/08/25
+BKN,Day'Ron Sharpe,1630549,C,6-10,265,24.0,5,North Carolina,Draft Rights Traded from PHX on 08/06/21
+BKN,Noah Clowney,1641730,F-C,6-10,210,22.0,3,Alabama,#21 Pick in 2023 Draft
+BKN,Julius Randle,203944,F-C,6-9,250,31.0,12,Kentucky,Traded from MIN on 07/10/26
+BKN,Chaney Johnson,1643052,G-F,6-7,220,24.0,1,Auburn,Signed on 12/26/25
+BKN,Tyler Bilodeau,1643548,F,6-9,230,22.0,R,UCLA,#43 Pick in 2026 Draft
+BKN,Ben Saraf,1642879,G,6-6,200,20.0,1,Ratiopharm Ulm,#26 Pick in 2025 Draft
+BOS,Dillon Mitchell,1641759,F,6-8,205,22.0,R,St. John's,#40 Pick in 2026 Draft
+BOS,Milos Uzan,1642870,G,6-3,175,23.0,R,Houston,Signed on 07/14/26
+BOS,Tucker DeVries,1643620,,,,23.0,R,Indiana,Signed on 07/14/26
+BOS,Jayson Tatum,1628369,F-G,6-8,210,28.0,9,Duke,#3 Pick in 2017 Draft
+BOS,Mitchell Robinson,1629011,C-F,7-0,240,28.0,8,Western Kentucky,Signed on 07/06/26
+BOS,Paul George,202331,F,6-8,230,36.0,16,Fresno State,Traded from PHI on 07/06/26
+BOS,Derrick White,1628401,G,6-4,190,32.0,9,Colorado,Traded from SAS on 02/10/22
+BOS,Payton Pritchard,1630202,G,6-1,195,28.0,6,Oregon,#26 Pick in 2020 Draft
+BOS,Chris Cenac Jr.,1643416,F,6-11,240,19.0,R,Houston,#27 Pick in 2026 Draft
+BOS,Ron Harper Jr.,1631199,G-F,6-5,233,26.0,4,Rutgers,Signed on 09/19/25
+BOS,Jordan Walsh,1641775,G,6-6,205,22.0,3,Arkansas,Draft Rights Traded from SAC on 06/28/23
+BOS,Hugo González,1642864,G,6-6,200,20.0,1,Spain,#28 Pick in 2025 Draft
+BOS,Sam Hauser,1630573,F,6-7,217,28.0,5,Virginia,Signed on 08/13/21
+BOS,Max Shulga,1642917,G,6-4,210,24.0,1,Virginia Commonwealth,Draft Rights Traded from ORL on 06/26/25
+BOS,Mike Conley,201144,G,6-1,175,38.0,19,Ohio State,Signed on 07/06/26
+BOS,Luka Garza,1630568,C,6-10,243,27.0,5,Iowa,Signed on 07/07/25
+BOS,Baylor Scheierman,1631248,G,6-6,205,25.0,2,Creighton,#30 Pick in 2024 Draft
+BOS,Amari Williams,1642873,F-C,6-11,250,24.0,1,Kentucky,Draft Rights Traded from ORL on 06/26/25
+BOS,Neemias Queta,1629674,C,7-0,248,27.0,5,Utah State,Signed on 09/19/23
+CHA,Michael Ajayi,1642369,G,6-7,235,23.0,R,Butler,Signed on 07/06/26
+CHA,Kylan Boswell,1643573,G,6-2,200,21.0,R,Illinois,Signed on 07/06/26
+CHA,Royce O'Neale,1626220,F,6-6,226,33.0,9,Baylor,Traded from PHX on 07/13/26
+CHA,Dorian Finney-Smith,1627827,F,6-7,220,33.0,10,Florida,Traded from HOU on 07/06/26
+CHA,Grant Williams,1629684,F,6-7,236,27.0,7,Tennessee,Traded from DAL on 02/08/24
+CHA,Coby White,1629632,G,6-4,210,26.0,7,North Carolina,Traded from CHI on 02/04/26
+CHA,Sion James,1642883,G,6-5,220,23.0,1,Duke,#33 Pick in 2025 Draft
+CHA,Christian Anderson,1643515,G,6-0,165,20.0,R,Texas Tech,#18 Pick in 2026 Draft
+CHA,Kon Knueppel,1642851,G-F,6-6,215,20.0,1,Duke,#4 Pick in 2025 Draft
+CHA,Grayson Allen,1628960,G,6-3,198,30.0,8,Duke,Traded from PHX on 07/13/26
+CHA,Naz Reid,1629675,C-F,6-9,264,26.0,7,Louisiana State,Traded from MIN on 07/10/26
+CHA,Ryan Kalkbrenner,1641750,C,7-1,256,24.0,1,Creighton,#34 Pick in 2025 Draft
+CHA,Antonio Reeves,1641810,G,6-5,205,25.0,2,Kentucky,Signed on 07/25/25
+CHA,Moussa Diabaté,1631217,F,6-10,210,24.0,4,Michigan,Signed on 07/31/24
+CHA,Mouhamadou Gueye,1631338,F,6-9,210,28.0,2,Pittsburgh,Traded from CHI on 07/10/26
+CHA,PJ Hall,1641790,C,6-8,245,24.0,2,Clemson,Signed on 12/24/25
+CHA,Pat Connaughton,1626192,G,6-5,209,33.0,11,Notre Dame,Traded from MIL on 07/06/25
+CHA,Hannes Steinbach,1643419,F,6-11,,20.0,R,Washington,#14 Pick in 2026 Draft
+CHA,Tre Mann,1630544,G,6-4,178,25.0,5,Florida,Traded from OKC on 02/08/24
+CHA,Brandon Miller,1641706,F,6-7,200,23.0,3,Alabama,#2 Pick in 2023 Draft
+CHA,Xavier Tillman,1630214,F,6-8,245,27.0,6,Michigan State,Traded from BOS on 02/05/26
+CHA,Tidjane Salaün,1642275,F,6-10,207,20.0,2,Cholet,#6 Pick in 2024 Draft
+CHA,Liam McNeeley,1642862,F,6-7,210,20.0,1,Connecticut,Draft Rights Traded from PHX on 06/30/25
+CHI,Tobe Awaka,1643591,F,6-8,250,22.0,R,Arizona,Signed on 07/03/26
+CHI,Jaylin Sellers,1643637,,,,23.0,R,Providence,Signed on 07/03/26
+CHI,Josh Giddey,1630581,G,6-7,214,23.0,5,NBA Global Academy,Traded from OKC on 06/21/24
+CHI,Dailyn Swain,1643517,F,6-7,220,21.0,R,Texas,#15 Pick in 2026 Draft
+CHI,Rob Dillingham,1642265,G,6-2,175,21.0,2,Kentucky,Traded from MIN on 02/05/26
+CHI,Caleb Wilson,1643410,F,6-10,215,20.0,R,North Carolina,#4 Pick in 2026 Draft
+CHI,Nic Claxton,1629651,C,6-11,215,27.0,7,Georgia,Traded from BKN on 07/10/26
+CHI,Leonard Miller,1631159,F,6-10,220,22.0,3,NBA G League Ignite,Traded from MIN on 02/05/26
+CHI,Zach Collins,1628380,F-C,6-9,240,28.0,9,Gonzaga,Traded from SAS on 02/03/25
+CHI,Matas Buzelis,1641824,F,6-8,196,21.0,2,NBA G League Ignite,#11 Pick in 2024 Draft
+CHI,Norman Powell,1626181,G,6-3,215,33.0,11,UCLA,Signed on 07/10/26
+CHI,Noa Essengue,1642855,F,6-8,194,19.0,1,Ratiopharm Ulm (Germany),#12 Pick in 2025 Draft
+CHI,Jalen Smith,1630188,F-C,6-8,244,26.0,6,Maryland,Signed on 07/08/24
+CHI,Tre Jones,1630200,G,6-1,190,26.0,6,Duke,Traded from SAS on 02/03/25
+CHI,Isaac Okoro,1630171,F-G,6-4,225,25.0,6,Auburn,Traded from CLE on 07/06/25
+CHI,Patrick Williams,1630172,F,6-6,235,24.0,6,Florida State,#4 Pick in 2020 Draft
+CLE,James Harden,201935,G,6-5,220,36.0,17,Arizona State,Traded from LAC on 02/04/26
+CLE,Max Strus,1629622,G-F,6-5,215,30.0,7,DePaul,Traded from MIA on 07/06/23
+CLE,Thomas Bryant,1628418,C-F,6-9,248,28.0,9,Indiana,Signed on 09/25/25
+CLE,Evan Mobley,1630596,C,6-11,215,25.0,5,Southern California,#3 Pick in 2021 Draft
+CLE,Sam Merrill,1630241,G,6-4,205,30.0,6,Utah State,Signed on 03/03/23
+CLE,Dennis Schröder,203471,G,6-1,175,32.0,13,Braunschweig,Traded from SAC on 02/01/26
+CLE,Craig Porter Jr.,1641854,G,6-1,180,26.0,3,Wichita State,Signed on 07/03/23
+CLE,Riley Minix,1642434,F,6-7,230,25.0,2,Morehead State,Signed on 02/13/26
+CLE,Meleek Thomas,1643509,G,6-5,185,19.0,R,Arkansas,#34 Pick in 2026 Draft
+CLE,Jaylon Tyson,1642281,G-F,6-6,215,23.0,2,California,#20 Pick in 2024 Draft
+CLE,Tristan Enaruna,1642400,F,6-7,220,25.0,1,Cleveland State,Signed on 09/26/25
+CLE,Tyrese Proctor,1642878,G,6-4,185,22.0,1,Duke,#49 Pick in 2025 Draft
+CLE,Jarrett Allen,1628386,C,6-9,243,28.0,9,Texas,Traded from BKN on 01/16/21
+CLE,Olivier Sarr,1630846,C,6-10,240,27.0,4,Kentucky,Signed on 03/03/26
+CLE,Nae'Qwan Tomlin,1641772,F,6-8,210,25.0,2,Memphis,Signed on 09/23/24
+CLE,"Ernest Udeh, Jr.",1643640,C,6-11,266,22.0,R,Miami,Signed on 07/01/26
+CLE,Donovan Mitchell,1628378,G,6-2,215,29.0,9,Louisville,Traded from UTA on 09/03/22
+DAL,Tarik Biberovic,1641844,F,6-7,218,25.0,R,                                   ,Draft Rights Traded from MEM on 07/08/26
+DAL,Vsevolod Ishchenko,1643585,G,6-3,,21.0,R,,Draft Rights Traded from LAL on 06/24/26
+DAL,Max Christie,1631108,G,6-5,190,23.0,4,Michigan State,Traded from LAL on 02/02/25
+DAL,John Poulakidas,1642967,G,6-6,205,23.0,1,Yale,Signed on 02/28/26
+DAL,Dereck Lively II,1641726,C,7-1,230,22.0,3,Duke,Draft Rights Traded from OKC on 07/06/23
+DAL,Naji Marshall,1630230,F,6-6,220,28.0,6,Xavier,Signed on 07/06/24
+DAL,Dwight Powell,203939,F-C,6-10,240,35.0,12,Stanford,Traded from BOS on 12/18/14
+DAL,Marcus Sasser,1631204,G,6-1,195,25.0,3,Houston,Traded from DET on 07/08/26
+DAL,Zaccharie Risacher,1642258,F,6-8,200,21.0,2,JL Bourg-en-Bresse,Traded from ATL on 07/19/26
+DAL,Brandon Williams,1630314,G,6-1,190,26.0,4,Arizona,Signed on 12/28/23
+DAL,Kyrie Irving,202681,G,6-2,195,34.0,14,Duke,Traded from BKN on 02/06/23
+DAL,Jett Howard,1641724,G,6-8,215,22.0,3,Michigan,Signed on 07/20/26
+DAL,Morez Johnson,1643516,F,6-9,250,20.0,R,Michigan,#9 Pick in 2026 Draft
+DAL,Caleb Martin,1628997,F,6-5,205,30.0,7,Nevada,Traded from PHI on 02/04/25
+DAL,Daniel Gafford,1629655,F-C,6-10,265,27.0,7,Arkansas,Traded from WAS on 02/08/24
+DAL,P.J. Washington,1629023,F,6-7,230,27.0,7,Kentucky,Traded from CHA on 02/08/24
+DAL,Moussa Cisse,1630619,C,6-11,220,23.0,1,Memphis,Signed on 07/08/25
+DAL,Klay Thompson,202691,G,6-5,220,36.0,15,Washington State,Traded from GSW on 07/06/24
+DAL,Cooper Flagg,1642843,F,6-9,205,19.0,1,Duke,#1 Pick in 2025 Draft
+DAL,Tobi Lawal,1643588,F,6-8,215,23.0,R,Virginia Tech,#48 Pick in 2026 Draft
+DAL,Santi Aldama,1630583,F-C,7-0,215,25.0,5,Loyola-Maryland,Traded from MEM on 07/08/26
+DAL,Sergio De Larrea,1643547,G,6-5,175,20.0,R,"Valencia, Spain",Draft Rights Traded from LAL on 06/24/26
+DEN,Trevon Brazile,1642350,F,6-10,220,23.0,R,Arkansas,#35 Pick in 2026 Draft
+DEN,Bryce Hopkins,1643624,,,,24.0,R,St. John's,#49 Pick in 2026 Draft
+DEN,Alpha Diallo,1643813,,,,29.0,R,,Signed on 07/13/26
+DEN,Christian Braun,1631128,G,6-6,220,25.0,4,Kansas,#21 Pick in 2022 Draft
+DEN,Curtis Jones,1642938,G,6-3,195,24.0,1,Iowa State,Signed on 07/21/25
+DEN,Julian Strawther,1631124,G,6-6,205,24.0,3,Gonzaga,Draft Rights Traded from IND on 06/23/23
+DEN,Tyus Jones,1626145,G,6-0,196,30.0,11,Duke,Signed on 03/05/26
+DEN,Peyton Watson,1631212,G,6-8,200,23.0,4,UCLA,Draft Rights Traded from OKC on 06/23/22
+DEN,Bruce Brown,1628971,G-F,6-4,202,29.0,8,Miami,Signed on 07/09/25
+DEN,DaRon Holmes II,1641747,F,6-9,225,23.0,1,Dayton,Draft Rights Traded from PHX on 06/26/24
+DEN,Nikola Jokić,203999,C,6-11,284,31.0,11,Mega Basket,#41 Pick in 2014 Draft
+DEN,Spencer Jones,1642461,F,6-7,225,25.0,2,Stanford,Signed on 07/30/24
+DEN,Zeke Nnaji,1630192,F-C,6-10,240,25.0,6,Arizona,#22 Pick in 2020 Draft
+DEN,Cameron Johnson,1629661,F,6-8,210,30.0,7,North Carolina,Traded from BKN on 07/08/25
+DEN,Jalen Pickett,1629618,G,6-2,202,26.0,3,Penn State,Draft Rights Traded from IND on 06/23/23
+DEN,KJ Simpson,1642354,G,6-2,189,23.0,2,Colorado,Signed on 02/19/26
+DEN,Jamal Murray,1627750,G,6-4,215,29.0,10,Kentucky,#7 Pick in 2016 Draft
+DEN,Aaron Gordon,203932,F,6-8,235,30.0,12,Arizona,Traded from ORL on 03/25/21
+DEN,Marvin Bagley III,1628963,F,6-10,235,27.0,8,Duke,Signed on 07/15/26
+DEN,David Roddy,1631223,F,6-5,255,25.0,4,Colorado State,Signed on 03/04/26
+DET,Ugonna Onyenso,1642391,C,6-11,225,21.0,R,Virginia,Draft Rights Traded from NYK on 06/24/26
+DET,Ebuka Okorie,1643536,G,6-2,185,19.0,R,Stanford,Draft Rights Traded from MEM on 06/24/26
+DET,Jalen Duren,1631105,C,6-10,250,22.0,4,Memphis,Draft Rights Traded from NYK on 07/06/22
+DET,Cade Cunningham,1630595,G,6-6,220,24.0,5,Oklahoma State,#1 Pick in 2021 Draft
+DET,Isaac Jones,1642403,F,6-8,245,26.0,2,Washington State,Awarded on Waivers on 11/06/25
+DET,Ronald Holland II,1641842,F,6-8,206,21.0,2,NBA G League Ignite,#5 Pick in 2024 Draft
+DET,Paul Reed,1630194,F,6-9,210,27.0,6,DePaul,Awarded on Waivers on 07/09/24
+DET,Ausar Thompson,1641709,G-F,6-7,205,23.0,3,Overtime Elite,#5 Pick in 2023 Draft
+DET,Isaiah Joe,1630198,G,6-4,165,27.0,6,Arkansas,Traded from OKC on 07/06/26
+DET,Gary Harris,203914,G,6-4,210,31.0,12,Michigan State,Traded from MIL on 07/08/26
+DET,Taurean Prince,1627752,F,6-6,218,32.0,10,Baylor,Traded from MIL on 07/08/26
+DET,Wendell Moore Jr.,1631111,G,6-5,215,24.0,4,Duke,Signed on 11/10/25
+DET,Elijah Harkless,1641989,G,6-3,195,26.0,2,UNLV,Signed on 07/08/26
+DET,Chaz Lanier,1642404,G,6-3,206,24.0,1,Tennessee,#37 Pick in 2025 Draft
+DET,John Collins,1628381,F-C,6-9,226,28.0,9,Wake Forest,Traded from LAC on 07/08/26
+DET,Daniss Jenkins,1642450,G,6-4,165,24.0,2,St. John's,Signed on 07/06/24
+DET,Kevin Huerter,1628989,G-F,6-6,190,27.0,8,Maryland,Traded from CHI on 02/03/26
+DET,Javonte Green,1629750,G,6-5,205,33.0,7,Radford,Signed on 08/14/25
+DET,Tolu Smith,1642449,F,6-11,,26.0,2,Mississippi State,Signed on 09/17/24
+DET,Duncan Robinson,1629130,F,6-7,215,32.0,8,Michigan,Traded from MIA on 07/07/25
+GSW,Gary Payton II,1627780,G,6-2,195,33.0,10,Oregon State,Traded from POR on 02/09/23
+GSW,Yaxel Lendeborg,1642865,F,6-9,250,23.0,R,Alabama-Birmingham,#11 Pick in 2026 Draft
+GSW,Brandin Podziemski,1641764,G,6-4,205,23.0,3,Santa Clara,#19 Pick in 2023 Draft
+GSW,Will Richard,1642954,G,6-3,206,23.0,1,Florida,Draft Rights Traded from MEM on 07/06/25
+GSW,Moses Moody,1630541,G,6-5,211,24.0,5,Arkansas,#14 Pick in 2021 Draft
+GSW,Kristaps Porziņģis,204001,F-C,7-2,240,30.0,11,Cajasol Sevilla,Traded from ATL on 02/05/26
+GSW,De'Anthony Melton,1629001,G,6-2,200,28.0,8,Southern California,Signed on 10/01/25
+GSW,Jimmy Butler III,202710,F,6-6,230,36.0,15,Marquette,Traded from MIA on 02/06/25
+GSW,Gui Santos,1630611,F,6-7,185,24.0,3,Minas,#55 Pick in 2022 Draft
+GSW,LJ Cryer,1643018,G,6-0,,24.0,1,Houston,Signed on 09/29/25
+GSW,Nate Williams,1631466,G,6-5,205,27.0,4,Buffalo,Signed on 02/17/26
+GSW,Al Horford,201143,C-F,6-8,240,40.0,19,Florida,Signed on 10/01/25
+GSW,Draymond Green,203110,F,6-6,230,36.0,14,Michigan State,#35 Pick in 2012 Draft
+GSW,Lajae Jones,1643650,G-F,6-7,220,22.0,R,Florida State,#54 Pick in 2026 Draft
+GSW,Charles Bassey,1629646,C-F,6-10,230,25.0,5,Western Kentucky,Signed on 04/05/26
+GSW,Stephen Curry,201939,G,6-2,185,38.0,17,Davidson,#7 Pick in 2009 Draft
+GSW,Seth Curry,203552,G,6-1,185,35.0,13,Duke,Signed on 10/01/25
+GSW,Malevy Leons,1642502,F,6-9,210,26.0,2,Bradley,Signed on 12/08/25
+HOU,Bruce Thornton,1643570,G,6-2,215,22.0,R,Ohio State,Draft Rights Traded from NYK on 06/24/26
+HOU,Quadir Copeland,1643595,G,6-6,203,22.0,R,North Carolina State,Signed on 07/07/26
+HOU,Aaron Holiday,1628988,G,6-0,185,29.0,8,UCLA,Signed on 07/10/23
+HOU,Amen Thompson,1641708,G-F,6-7,200,23.0,3,Overtime Elite,#4 Pick in 2023 Draft
+HOU,Julian Phillips,1641763,F,6-6,201,22.0,3,Tennessee,Signed on 07/24/26
+HOU,JD Davison,1631120,G,6-1,195,23.0,4,Alabama,Signed on 07/26/25
+HOU,Fred VanVleet,1627832,G,6-0,197,32.0,9,Wichita State,Signed on 07/07/23
+HOU,Kevin Durant,201142,F,6-11,240,37.0,19,Texas,Traded from PHX on 07/06/25
+HOU,Jae'Sean Tate,1630256,F,6-4,230,30.0,6,Ohio State,Signed on 11/25/20
+HOU,Jabari Smith Jr.,1631095,F,6-11,220,23.0,4,Auburn,#3 Pick in 2022 Draft
+HOU,Steven Adams,203500,C,6-11,265,33.0,13,Pittsburgh,Traded from MEM on 02/01/24
+HOU,Tristen Newton,1641803,G,6-5,190,25.0,2,Connecticut,Signed on 01/03/26
+HOU,Reed Sheppard,1642263,G,6-2,185,22.0,2,Kentucky,#3 Pick in 2024 Draft
+HOU,Tari Eason,1631106,F,6-8,215,25.0,4,Louisiana State,#17 Pick in 2022 Draft
+HOU,Isaiah Crawford,1642384,F,6-6,220,24.0,2,Louisiana Tech,Signed on 07/26/25
+HOU,Alperen Sengun,1630578,C,6-11,243,24.0,5,Besiktas,Draft Rights Traded from OKC on 07/30/21
+HOU,Clint Capela,203991,C,6-10,256,32.0,12,Elan Chalon,Traded from ATL on 07/06/25
+HOU,Bogdan Bogdanović,203992,G,6-5,225,33.0,9,Fenerbahce,Signed on 07/08/26
+HOU,Jeff Green,201145,F,6-8,235,39.0,19,Georgetown,Signed on 07/06/23
+HOU,Oscar Tshiebwe,1631131,F-C,6-8,255,26.0,3,Kentucky,Signed on 07/23/26
+HOU,Marcus Smart,203935,G,6-3,220,32.0,12,Oklahoma State,Signed on 07/10/26
+IND,Tyrese Haliburton,1630169,G,6-5,185,26.0,5,Iowa State,Traded from SAC on 02/08/22
+IND,Obi Toppin,1630167,F,6-9,220,28.0,6,Dayton,Traded from NYK on 07/07/23
+IND,Andrew Nembhard,1629614,G-F,6-4,191,26.0,4,Gonzaga,#31 Pick in 2022 Draft
+IND,Braden Smith,1643552,G,6-0,170,23.0,R,Purdue,Draft Rights Traded from CHI on 06/24/26
+IND,Jarace Walker,1641716,F,6-7,235,22.0,3,Houston,Draft Rights Traded from WAS on 06/23/23
+IND,T.J. McConnell,204456,G,6-1,190,34.0,11,Arizona,Signed on 07/29/19
+IND,Kelly Oubre Jr.,1626162,F-G,6-8,210,30.0,11,Kansas,Signed on 07/07/26
+IND,Johnny Furphy,1642277,G,6-8,200,21.0,2,Kansas,Draft Rights Traded from SAS on 07/06/24
+IND,Jalen Slawson,1641771,F,6-7,215,26.0,2,Furman,Signed on 09/09/25
+IND,Larry Nance Jr.,1626204,F-C,6-6,245,33.0,11,Wyoming,Signed on 07/09/26
+IND,Aaron Nesmith,1630174,G-F,6-5,215,26.0,6,Vanderbilt,Traded from BOS on 07/09/22
+IND,Kobe Brown,1641738,F,6-7,250,26.0,3,Missouri,Traded from LAC on 02/05/26
+IND,Ben Sheppard,1641767,G,6-6,190,25.0,3,Belmont,#26 Pick in 2023 Draft
+IND,Quenton Jackson,1631245,G,6-4,173,27.0,4,Texas A&M,Signed on 03/04/24
+IND,Jay Huff,1630643,C,7-1,240,28.0,5,Virginia,Traded from MEM on 07/06/25
+IND,Ivica Zubac,1627826,C,7-0,240,29.0,10,Mega Basket,Traded from LAC on 02/05/26
+IND,Pascal Siakam,1627783,F,6-8,245,32.0,10,New Mexico State,Traded from TOR on 01/17/24
+IND,Ethan Thompson,1630679,G,6-4,195,27.0,1,Oregon State,Signed on 11/30/25
+LAC,Norchad Omier,1641807,F,6-7,248,24.0,1,Miami,Signed on 02/20/26
+LAC,Baba Miller,1642394,F,6-11,204,22.0,R,Cincinnati,#36 Pick in 2026 Draft
+LAC,Sean Pedulla,1642951,G,6-1,195,23.0,1,Mississippi,Signed on 02/19/26
+LAC,Nick Martinelli,1643568,F,6-7,220,22.0,R,Northwestern,Draft Rights Traded from HOU on 06/24/26
+LAC,Narcisse Ngoy,1643712,C,7-0,,22.0,R,,Draft Rights Traded from ATL on 06/24/26
+LAC,Bradley Beal,203078,G,6-4,207,33.0,14,Florida,Signed on 07/18/25
+LAC,Keaton Wagler,1643413,G,6-6,175,19.0,R,Illinois,#5 Pick in 2026 Draft
+LAC,Kawhi Leonard,202695,F,6-6,225,35.0,15,San Diego State,Signed on 07/09/19
+LAC,Kobe Sanders,1642920,G,6-8,207,24.0,1,Nevada,Draft Rights Traded from NYK on 06/26/25
+LAC,Derrick Jones Jr.,1627884,F,6-6,210,29.0,10,UNLV,Signed on 07/09/24
+LAC,Kris Dunn,1627739,G,6-3,205,32.0,10,Providence,Traded from UTA on 07/18/24
+LAC,Bennedict Mathurin,1631097,G-F,6-5,210,24.0,4,Arizona,Traded from IND on 02/05/26
+LAC,Darius Garland,1629636,G,6-1,192,26.0,7,Vanderbilt,Traded from CLE on 02/04/26
+LAC,Brook Lopez,201572,C,7-1,282,38.0,18,Stanford,Signed on 07/06/25
+LAC,TyTy Washington Jr.,1631102,G,6-3,195,24.0,4,Kentucky,Signed on 08/07/25
+LAC,Yanic Konan Niederhäuser,1642949,C,6-11,242,23.0,1,Penn State,#30 Pick in 2025 Draft
+LAC,Jordan Miller,1641757,G,6-5,194,26.0,3,Miami,#48 Pick in 2023 Draft
+LAC,Johni Broome,1641780,F,6-9,244,24.0,1,Auburn,Traded from PHI on 07/28/26
+LAC,Isaiah Jackson,1630543,F,6-8,205,24.0,5,Kentucky,Traded from IND on 02/05/26
+LAC,Cam Christie,1642353,G,6-5,190,21.0,2,Minnesota,#46 Pick in 2024 Draft
+LAC,Rui Hachimura,1629060,F,6-8,230,28.0,7,Gonzaga,Signed on 07/06/26
+LAC,Nicolas Batum,201587,G-F,6-7,230,37.0,18,Le Mans,Signed on 07/09/24
+LAL,Arthur Kaluma,1641751,F,6-7,225,24.0,R,Texas,Signed on 07/25/25
+LAL,Adou Thiero,1642876,G,6-7,220,22.0,1,Arkansas,Draft Rights Traded from BKN on 07/06/25
+LAL,Jarred Vanderbilt,1629020,F,6-8,214,27.0,8,Kentucky,Traded from UTA on 02/09/23
+LAL,Matisse Thybulle,1629680,G-F,6-5,202,29.0,7,Washington,Signed on 07/27/26
+LAL,Dalton Knecht,1642261,F,6-6,215,25.0,2,Tennessee,#17 Pick in 2024 Draft
+LAL,Quentin Grimes,1629656,G,6-5,207,26.0,5,Houston,Signed on 07/07/26
+LAL,Jaden Hardy,1630702,G,6-3,198,24.0,4,NBA G League Ignite,Traded from WAS on 07/07/26
+LAL,Bronny James,1642355,G,6-2,210,21.0,2,Southern California,#55 Pick in 2024 Draft
+LAL,Collin Sexton,1629012,G,6-3,190,27.0,8,Alabama,Signed on 07/11/26
+LAL,Ziaire Williams,1630533,F,6-9,185,24.0,5,Stanford,Signed on 07/19/26
+LAL,Jake LaRavia,1631222,F,6-7,235,24.0,4,Wake Forest,Signed on 07/06/25
+LAL,Walker Kessler,1631117,C,7-2,245,25.0,4,Auburn,Traded from UTA on 07/08/26
+LAL,Austin Reaves,1630559,G,6-5,197,28.0,5,Oklahoma,Signed on 08/03/21
+LAL,Chris Mañon,1643024,G,6-4,209,24.0,1,Vanderbilt,Signed on 07/24/25
+LAL,AK Okereke,1643758,F,6-7,244,23.0,R,Vanderbilt,Signed on 07/03/26
+LAL,Cameron Carr,1643418,G,6-5,175,21.0,R,Baylor,Draft Rights Traded from NYK on 06/24/26
+LAL,Sandro Mamukelashvili,1630572,F-C,6-9,240,27.0,5,Seton Hall,Signed on 07/07/26
+LAL,Kevon Looney,1626172,F,6-9,222,30.0,11,UCLA,Signed on 07/12/26
+LAL,Luka Dončić,1629029,F-G,6-8,230,27.0,8,Real Madrid,Traded from DAL on 02/02/25
+MEM,Jahmai Mashack,1642942,G,6-4,203,23.0,1,Tennessee,Draft Rights Traded from GSW on 07/06/25
+MEM,Richie Saunders,1643563,G,6-5,200,24.0,R,Brigham Young,#32 Pick in 2026 Draft
+MEM,Jaylen Wells,1642377,F,6-7,,22.0,2,Washington State,#39 Pick in 2024 Draft
+MEM,Scotty Pippen Jr.,1630590,G,6-2,170,25.0,4,Vanderbilt,Signed on 01/16/24
+MEM,Ty Jerome,1629660,G-F,6-5,195,29.0,7,Virginia,Signed on 07/14/25
+MEM,Walter Clayton Jr.,1642383,G,6-4,195,23.0,1,Florida,Traded from UTA on 02/03/26
+MEM,D'Angelo Russell,1626156,G,6-3,193,30.0,11,Ohio State,Traded from WAS on 07/08/26
+MEM,AJ Johnson,1642358,G,6-5,160,21.0,2,Illawarra,Traded from DAL on 07/08/26
+MEM,Jerami Grant,203924,F,6-7,213,32.0,12,Syracuse,Traded from POR on 06/29/26
+MEM,Javon Small,1642914,G,6-1,190,23.0,1,West Virginia,#48 Pick in 2025 Draft
+MEM,Zach Edey,1641744,C,7-3,305,24.0,2,Purdue,#9 Pick in 2024 Draft
+MEM,Olivier-Maxence Prosper,1641765,F,6-7,230,24.0,3,Marquette,Signed on 09/04/25
+MEM,Quinten Post,1642366,C,7-0,238,26.0,2,Boston College,Signed on 07/08/26
+MEM,Taylor Hendricks,1641707,F,6-9,215,22.0,3,Central Florida,Traded from UTA on 02/03/26
+MEM,Cedric Coward,1642907,G,6-5,206,22.0,1,Washington State,Draft Rights Traded from POR on 06/25/25
+MEM,Cam Spencer,1642285,G,6-3,205,26.0,2,Connecticut,Draft Rights Traded from DET on 07/06/24
+MEM,Kris Murray,1631200,F,6-8,218,25.0,3,Iowa,Traded from POR on 06/29/26
+MEM,Cameron Boozer,1643409,F,6-10,250,19.0,R,Duke,#3 Pick in 2026 Draft
+MEM,Isaiah Stewart,1630191,F-C,6-8,250,25.0,6,Washington,Traded from DET on 07/08/26
+MEM,Karim Lopez,1643510,F,6-8,210,19.0,R,,Draft Rights Traded from DET on 06/24/26
+MEM,GG Jackson,1641713,F,6-9,210,21.0,3,South Carolina,#45 Pick in 2023 Draft
+MEM,Taj Gibson,201959,F,6-9,232,41.0,17,Southern California,Signed on 02/26/26
+MIA,Simone Fontecchio,1631323,F,6-7,209,30.0,4,Baskonia,Traded from DET on 07/07/25
+MIA,Davion Mitchell,1630558,G,6-0,202,27.0,5,Baylor,Traded from TOR on 02/06/25
+MIA,Trevor Keels,1631211,G,6-3,215,22.0,2,Duke,Signed on 09/11/25
+MIA,Ryan Conwell,1643553,G,6-4,215,22.0,R,Louisville,Draft Rights Traded from OKC on 06/24/26
+MIA,Nikola Jović,1631107,F,6-10,205,23.0,4,Mega Basket,#27 Pick in 2022 Draft
+MIA,Giannis Antetokounmpo,203507,F,6-11,243,31.0,13,Filathlitikos,Traded from MIL on 07/06/26
+MIA,Pelle Larsson,1641796,G,6-5,215,25.0,2,Arizona,Draft Rights Traded from HOU on 06/27/24
+MIA,Tim Hardaway Jr.,203501,G-F,6-5,205,34.0,13,Michigan,Signed on 07/06/26
+MIA,Dru Smith,1630696,G,6-2,203,28.0,4,Missouri,Signed on 07/01/23
+MIA,Bam Adebayo,1628389,C-F,6-9,255,29.0,9,Kentucky,#14 Pick in 2017 Draft
+MIA,Myron Gardner,1642066,F,6-5,220,25.0,1,Arkansas-Little Rock,Signed on 07/24/25
+MIA,Keshad Johnson,1642352,F,6-6,225,25.0,2,Arizona,Signed on 07/01/24
+MIA,Jahmir Young,1642443,G,6-0,185,25.0,2,Maryland,Signed on 09/11/25
+MIA,Andrew Wiggins,203952,F,6-6,197,31.0,12,Kansas,Traded from GSW on 02/06/25
+MIA,Tre Donaldson,1643621,G,6-3,195,22.0,R,Miami,Signed on 07/03/26
+MIA,Vladislav Goldin,1642884,C,7-0,250,25.0,1,Michigan,Signed on 07/02/25
+MIA,Bobby Portis Jr.,1626171,F,6-9,250,31.0,11,Arkansas,Traded from MIL on 07/06/26
+MIL,Malique Lewis,1641831,F,6-8,195,21.0,R,,Draft Rights Traded from WAS on 06/24/26
+MIL,Nate Ament,1643417,F,6-10,207,19.0,R,Tennessee,Draft Rights Traded from MIA on 07/06/26
+MIL,Brayden Burries,1643415,G,6-4,205,20.0,R,Arizona,#10 Pick in 2026 Draft
+MIL,Jericho Sims,1630579,C,6-10,250,27.0,5,Texas,Traded from NYK on 02/06/25
+MIL,Myles Turner,1626167,C-F,6-11,250,30.0,11,Texas,Signed on 07/06/25
+MIL,Gary Trent Jr.,1629018,G,6-5,204,27.0,8,Duke,Signed on 07/20/24
+MIL,Kevin Porter Jr.,1629645,G-F,6-5,203,26.0,6,Southern California,Traded from LAC on 02/06/25
+MIL,Kam Jones,1642880,G,6-4,200,24.0,1,Marquette,Signed on 07/05/26
+MIL,Caris LeVert,1627747,G,6-7,205,31.0,10,Michigan,Traded from DET on 07/08/26
+MIL,Kel'el Ware,1642276,C,7-0,230,22.0,2,Indiana,Traded from MIA on 07/06/26
+MIL,Tyler Herro,1629639,G,6-5,195,26.0,7,Kentucky,Traded from MIA on 07/06/26
+MIL,Ryan Rollins,1631157,G,6-3,180,24.0,4,Toledo,Signed on 02/20/24
+MIL,Kyle Kuzma,1628398,F,6-8,221,31.0,9,Utah,Traded from WAS on 02/06/25
+MIL,AJ Green,1631260,G,6-4,190,26.0,4,Northern Iowa,Signed on 07/01/22
+MIL,Ousmane Dieng,1631172,F,6-9,185,23.0,4,New Zealand Breakers,Traded from CHI on 02/05/26
+MIL,Bogoljub Marković,1642881,F,6-11,210,21.0,R,Serbia,#47 Pick in 2025 Draft
+MIL,Jaime Jaquez Jr.,1631170,G,6-6,225,25.0,3,UCLA,Traded from MIA on 07/06/26
+MIL,Kasparas Jakučionis,1642857,G,6-5,200,20.0,1,Illinois-Urbana-Champaign,Traded from MIA on 07/06/26
+MIL,Alex Antetokounmpo,1630828,F,6-8,214,24.0,1,                                   ,Signed on 09/16/22
+MIL,Cormac Ryan,1642504,G,6-5,205,27.0,1,North Carolina,Signed on 09/10/25
+MIL,Pete Nance,1631250,F,6-9,225,26.0,3,Northwestern,Signed on 02/27/25
+MIL,Thanasis Antetokounmpo,203648,F,6-7,219,34.0,7,Panathinaikos,Signed on 07/16/19
+MIL,Andre Jackson Jr.,1641748,G,6-6,209,24.0,3,Connecticut,Draft Rights Traded from ORL on 06/22/23
+MIN,Donte DiVincenzo,1628978,G,6-4,203,29.0,8,Villanova,Traded from NYK on 10/02/24
+MIN,LaMelo Ball,1630163,G,6-7,180,24.0,6,Illawarra,Traded from CHA on 07/10/26
+MIN,Jaden McDaniels,1630183,F,6-9,185,25.0,6,Washington,Draft Rights Traded from OKC on 11/20/20
+MIN,Terrence Shannon Jr,1630545,G-F,6-6,215,25.0,2,Illinois,#27 Pick in 2024 Draft
+MIN,Anthony Edwards,1630162,G,6-4,225,24.0,6,Georgia,#1 Pick in 2020 Draft
+MIN,Jaylen Clark,1641740,G,6-5,205,24.0,2,UCLA,#53 Pick in 2023 Draft
+MIN,Bones Hyland,1630538,G,6-2,169,25.0,5,Virginia Commonwealth,Signed on 02/27/25
+MIN,Josh Green,1630182,G,6-6,200,25.0,6,Arizona,Traded from CHA on 07/10/26
+MIN,Ayo Dosunmu,1630245,G,6-4,201,26.0,5,Illinois,Traded from CHI on 02/05/26
+MIN,Trey Kaufman-Renn,1643626,F,6-9,230,23.0,R,Purdue,#59 Pick in 2026 Draft
+MIN,Zyon Pullin,1642389,G,6-4,206,25.0,2,Florida,Signed on 09/28/25
+MIN,Joan Beringer,1642866,F,6-11,230,19.0,1,Cedevita Olimpija (Slovenia),#17 Pick in 2025 Draft
+MIN,Enrique Freeman,1642402,F,6-9,220,26.0,2,Akron,Signed on 08/01/25
+MIN,Rudy Gobert,203497,C,7-1,258,34.0,13,Cholet,Traded from UTA on 07/06/22
+MIN,Isaiah Evans,1642912,F,6-6,175,20.0,R,Duke,Draft Rights Traded from BKN on 07/10/26
+MIN,Trey Lyles,1626168,F,6-9,234,30.0,10,Kentucky,Signed on 07/10/26
+MIN,Rocco Zikarsky,1642911,C,7-3,227,20.0,1,Brisbane Bullets (Australia),Draft Rights Traded from LAL on 07/06/25
+NOP,Josh Oduro,1642490,C,6-9,240,25.0,1,Providence,Signed on 10/10/24
+NOP,Jeremiah Fears,1642847,G,6-3,190,19.0,1,Oklahoma,#7 Pick in 2025 Draft
+NOP,Zion Williamson,1629627,F,6-6,284,26.0,7,Duke,#1 Pick in 2019 Draft
+NOP,Herbert Jones,1630529,F,6-7,206,27.0,5,Alabama,#35 Pick in 2021 Draft
+NOP,Jordan Poole,1629673,G,6-4,194,27.0,7,Michigan,Traded from WAS on 07/06/25
+NOP,Hunter Dickinson,1630621,C,7-1,255,25.0,1,Kansas,Signed on 07/03/25
+NOP,Dejounte Murray,1627749,G,6-4,180,29.0,10,Washington,Traded from ATL on 07/06/24
+NOP,DeAndre Jordan,201599,C,6-11,265,38.0,18,Texas A&M,Signed on 10/23/25
+NOP,Christian Koloko,1631132,C,6-11,225,26.0,4,Arizona,Signed on 07/28/26
+NOP,Jaron Pierre Jr.,1643555,G,6-5,210,24.0,R,Southern Methodist,#58 Pick in 2026 Draft
+NOP,Bryce McGowens,1631121,G,6-6,190,23.0,4,Nebraska,Signed on 07/30/25
+NOP,Micah Peavy,1642877,G-F,6-7,215,25.0,1,Georgetown,Draft Rights Traded from WAS on 07/06/25
+NOP,Karlo Matković,1631255,F-C,6-10,231,25.0,2,Mega Basket,#52 Pick in 2022 Draft
+NOP,Yves Missi,1642274,C,6-11,235,22.0,2,Baylor,#21 Pick in 2024 Draft
+NOP,Derik Queen,1642852,C,6-9,250,21.0,1,Maryland,Draft Rights Traded from ATL on 06/25/25
+NOP,Jordan Hawkins,1641722,G,6-5,190,24.0,3,Connecticut,#14 Pick in 2023 Draft
+NOP,Trey Murphy III,1630530,F,6-8,206,26.0,5,Virginia,Draft Rights Traded from MEM on 08/07/21
+NOP,Saddiq Bey,1630180,G-F,6-8,215,27.0,6,Villanova,Traded from WAS on 07/06/25
+NOP,Kobe Bufkin,1641723,G,6-4,195,22.0,3,Michigan,Signed on 07/25/26
+NYK,Jack Kayil,1643583,G,6-3,174,20.0,R,,Draft Rights Traded from HOU on 06/24/26
+NYK,Tyler Nickel,1643589,F,6-7,220,22.0,R,Vanderbilt,#47 Pick in 2026 Draft
+NYK,Dillon Jones,1641794,F,6-5,235,24.0,2,Weber State,Signed on 01/20/26
+NYK,Andre Drummond,203083,C,6-11,279,32.0,14,Connecticut,Signed on 07/06/26
+NYK,Jordan Clarkson,203903,G,6-5,194,34.0,12,Missouri,Signed on 07/07/25
+NYK,Miles McBride,1630540,G,6-2,195,25.0,5,West Virginia,Draft Rights Traded from OKC on 07/30/21
+NYK,Josh Hart,1628404,G,6-5,215,31.0,9,Villanova,Traded from POR on 02/09/23
+NYK,Pacôme Dadiet,1642359,F,6-9,210,21.0,2,Ratiopharm Ulm,#25 Pick in 2024 Draft
+NYK,Jose Alvarado,1630631,G,6-0,179,28.0,5,Georgia Tech,Traded from NOP on 02/05/26
+NYK,OG Anunoby,1628384,F-G,6-7,240,29.0,9,Indiana,Traded from TOR on 12/30/23
+NYK,Kevin McCullar Jr.,1641755,G,6-6,210,25.0,2,Kansas,Draft Rights Traded from PHX on 06/27/24
+NYK,Jalen Brunson,1628973,G,6-2,190,29.0,8,Villanova,Signed on 07/12/22
+NYK,Tyler Kolek,1642278,G,6-2,195,25.0,2,Marquette,Draft Rights Traded from POR on 06/27/24
+NYK,Jeremy Sochan,1631110,F,6-8,230,23.0,4,Baylor,Signed on 02/13/26
+NYK,Mikal Bridges,1628969,G-F,6-6,209,29.0,8,Villanova,Traded from BKN on 07/06/24
+NYK,Karl-Anthony Towns,1626157,C-F,7-0,248,30.0,11,Kentucky,Traded from MIN on 10/02/24
+NYK,Landry Shamet,1629013,G,6-5,190,29.0,8,Wichita State,Signed on 09/14/24
+NYK,Trey Jemison III,1641998,C,6-10,270,26.0,3,Alabama-Birmingham,Signed on 09/16/25
+NYK,Mohamed Diawara,1642885,F,6-9,225,21.0,1,Paris Basketball,Draft Rights Traded from LAC on 06/26/25
+OKC,Josh Dix,1643717,,,,22.0,R,Creighton,Signed on 07/03/26
+OKC,Shai Gilgeous-Alexander,1628983,G,6-6,195,28.0,8,Kentucky,Traded from LAC on 07/10/19
+OKC,Jared McCain,1642272,G,6-3,195,22.0,2,Duke,Traded from PHI on 02/04/26
+OKC,Jaylin Williams,1631119,F,6-9,240,24.0,4,Arkansas,#34 Pick in 2022 Draft
+OKC,Chet Holmgren,1631096,C-F,7-1,208,24.0,3,Gonzaga,#2 Pick in 2022 Draft
+OKC,Jalen Williams,1631114,G-F,6-5,211,25.0,4,Santa Clara,#12 Pick in 2022 Draft
+OKC,Alex Caruso,1627936,G,6-5,186,32.0,9,Texas A&M,Traded from CHI on 06/21/24
+OKC,Thomas Sorber,1642850,C,6-9,250,20.0,R,Georgetown,#15 Pick in 2025 Draft
+OKC,Otega Oweh,1642923,G,6-4,215,23.0,R,Kentucky,Draft Rights Traded from MIA on 06/24/26
+OKC,Bennett Stirtz,1642892,G,6-4,180,22.0,R,Iowa,Draft Rights Traded from MEM on 06/23/26
+OKC,Aday Mara,1643530,C,7-2,255,21.0,R,Michigan,#12 Pick in 2026 Draft
+OKC,Cason Wallace,1641717,G,6-3,195,22.0,3,Kentucky,Draft Rights Traded from DAL on 07/06/23
+OKC,Brooks Barnhizer,1642964,G,6-5,230,24.0,1,Northwestern,#44 Pick in 2025 Draft
+OKC,Ajay Mitchell,1642349,G,6-4,190,24.0,2,California-Santa Barbara,Draft Rights Traded from NYK on 06/27/24
+OKC,Kenrich Williams,1629026,G-F,6-7,210,31.0,8,TCU,Traded from NOP on 11/23/20
+OKC,Nikola Topić,1642260,G,6-6,200,20.0,1,Crvena zvezda,#12 Pick in 2024 Draft
+OKC,Isaiah Hartenstein,1628392,C-F,7-0,250,28.0,8,Zalgiris,Signed on 07/06/24
+ORL,Anthony Black,1641710,G,6-7,200,22.0,3,Arkansas,#6 Pick in 2023 Draft
+ORL,Jonathan Isaac,1628371,F,6-10,230,28.0,9,Florida State,#6 Pick in 2017 Draft
+ORL,Jevon Carter,1628975,G,6-0,190,30.0,8,West Virginia,Signed on 02/06/26
+ORL,Desmond Bane,1630217,G,6-6,215,28.0,6,TCU,Traded from MEM on 06/15/25
+ORL,Jalen Suggs,1630591,G,6-5,205,25.0,5,Gonzaga,#5 Pick in 2021 Draft
+ORL,Paolo Banchero,1631094,F,6-10,250,23.0,4,Duke,#1 Pick in 2022 Draft
+ORL,Jamal Cain,1631288,F,6-7,191,27.0,4,Oakland,Signed on 07/25/25
+ORL,Nikola Vučević,202696,C,6-9,265,35.0,15,Southern California,Signed on 07/01/26
+ORL,Jase Richardson,1642859,G,6-1,180,20.0,1,Michigan State,#25 Pick in 2025 Draft
+ORL,Colin Castleton,1630658,C,6-10,250,26.0,3,Florida,Signed on 08/22/25
+ORL,Moritz Wagner,1629021,F-C,6-11,245,29.0,8,Michigan,Signed on 04/27/21
+ORL,Franz Wagner,1630532,F,6-10,220,24.0,5,Michigan,#8 Pick in 2021 Draft
+ORL,Tristan da Silva,1641783,F,6-8,217,25.0,2,Colorado,#18 Pick in 2024 Draft
+ORL,Izaiyah Nelson,1643593,F,6-10,218,22.0,R,South Florida,Draft Rights Traded from WAS on 06/24/26
+ORL,Alex Morales,1631457,G,6-6,210,28.0,1,Wagner,Signed on 10/08/22
+ORL,Wendell Carter Jr.,1628976,C-F,6-10,270,27.0,8,Duke,Traded from CHI on 03/25/21
+ORL,Goga Bitadze,1629048,C-F,6-11,250,27.0,7,Mega Basket,Signed on 02/13/23
+ORL,Noah Penda,1642869,G-F,6-7,215,21.0,1,Le Mans Sarthe,Draft Rights Traded from BOS on 06/26/25
+PHI,Duke Miles,1643575,G,6-2,175,24.0,R,Vanderbilt,Signed on 07/07/26
+PHI,Labaron Philon,1642889,G,6-4,177,20.0,R,Alabama,#22 Pick in 2026 Draft
+PHI,Tyrese Maxey,1630178,G,6-2,200,25.0,6,Kentucky,#21 Pick in 2020 Draft
+PHI,Caleb Love,1631126,G,6-3,212,24.0,1,Arizona,Signed on 07/05/26
+PHI,Kyle Lowry,200768,G,6-0,196,40.0,20,Villanova,Signed on 02/13/24
+PHI,Jaylen Brown,1627759,G-F,6-6,223,29.0,10,California,Traded from BOS on 07/06/26
+PHI,Justin Edwards,1642348,F,6-7,217,22.0,2,Kentucky,Signed on 07/04/24
+PHI,Trendon Watford,1630570,G-F,6-8,245,25.0,5,Louisiana State,Signed on 07/02/25
+PHI,MarJon Beauchamp,1630699,F,6-7,199,25.0,4,NBA G League Ignite,Signed on 10/14/25
+PHI,Joel Embiid,203954,C-F,7-0,270,32.0,10,Kansas,#3 Pick in 2014 Draft
+PHI,Rayan Rupert,1641712,G-F,6-7,205,22.0,3,New Zealand Breakers,Signed on 07/08/26
+PHI,Anfernee Simons,1629014,G,6-3,200,27.0,8,Edgewater HS (FL),Signed on 07/06/26
+PHI,LeBron James,2544,F,6-9,250,41.0,23,St. Vincent-St. Mary HS (OH),Signed on 07/26/26
+PHI,Tyrese Martin,1631213,F,6-6,215,27.0,3,Connecticut,Signed on 02/19/26
+PHI,Dominick Barlow,1631230,F,6-9,224,23.0,4,Overtime Elite,Signed on 07/09/25
+PHI,Adem Bona,1641737,F,6-10,235,23.0,2,UCLA,#41 Pick in 2024 Draft
+PHI,Dean Wade,1629731,F-C,6-9,228,29.0,7,Kansas State,Signed on 07/06/26
+PHI,Jabari Walker,1631133,F,6-7,237,24.0,4,Colorado,Signed on 07/05/25
+PHI,Ariel Hukporti,1630574,C,7-0,246,24.0,2,Riesen Ludwigsburg,Signed on 07/06/26
+PHI,VJ Edgecombe,1642845,G,6-4,190,20.0,1,Baylor,#3 Pick in 2025 Draft
+PHX,Miles Bridges,1628970,F,6-7,225,28.0,7,Michigan State,Traded from CHA on 07/13/26
+PHX,Ryan Dunn,1642346,F,6-7,216,23.0,2,Virginia,Draft Rights Traded from DEN on 06/26/24
+PHX,Amir Coffey,1629599,G-F,6-7,210,29.0,7,Minnesota,Traded from MIL on 02/05/26
+PHX,Dillon Brooks,1628415,G-F,6-7,225,30.0,9,Oregon,Traded from HOU on 07/06/25
+PHX,Jalen Green,1630224,G,6-4,186,24.0,5,NBA G League Ignite,Traded from HOU on 07/06/25
+PHX,Haywood Highsmith,1629312,F,6-5,220,29.0,6,Wheeling Jesuit,Signed on 02/18/26
+PHX,Luke Kennard,1628379,G,6-5,206,30.0,9,Duke,Signed on 07/14/26
+PHX,Khaman Maluach,1642863,C,7-1,250,19.0,1,Duke,Draft Rights Traded from HOU on 07/06/25
+PHX,Oso Ighodaro,1642345,F,6-11,235,24.0,2,Marquette,Draft Rights Traded from NYK on 06/27/24
+PHX,Collin Gillespie,1631221,G,6-1,195,27.0,3,Villanova,Signed on 07/02/24
+PHX,Koby Brea,1642886,G,6-5,215,23.0,1,Kentucky,Draft Rights Traded from GSW on 07/06/25
+PHX,Mark Williams,1631109,C,7-1,240,24.0,4,Duke,Traded from CHA on 06/30/25
+PHX,Devin Booker,1626164,G,6-5,206,29.0,11,Kentucky,#13 Pick in 2015 Draft
+PHX,Jamaree Bouyea,1631123,G,6-2,180,27.0,4,San Francisco,Signed on 11/18/25
+PHX,Isaiah Livers,1630587,F,6-6,232,28.0,4,Michigan,Signed on 07/08/25
+PHX,Koa Peat,1643520,F,6-8,235,19.0,R,Arizona,Draft Rights Traded from DAL on 06/24/26
+PHX,Rasheer Fleming,1642853,F,6-9,240,22.0,1,St. Joseph's (PA),Draft Rights Traded from MIN on 07/06/25
+PHX,CJ Huntley,1643047,F,6-11,230,24.0,1,Appalachian State,Signed on 07/03/25
+PHX,Jordan Goodwin,1630692,G,6-3,215,27.0,5,St. Louis,Awarded on Waivers on 07/23/25
+PHX,Pat Spencer,1630311,G,6-2,205,30.0,3,Northwestern,Signed on 07/03/26
+POR,Jayson Kent,1643257,F,6-8,215,24.0,1,Texas,Signed on 03/03/26
+POR,Damian Lillard,203081,G,6-2,200,36.0,13,Weber State,Signed on 07/19/25
+POR,Scoot Henderson,1630703,G,6-3,207,22.0,3,NBA G League Ignite,#3 Pick in 2023 Draft
+POR,Blake Wesley,1631104,G,6-4,190,23.0,4,Notre Dame,Signed on 07/21/25
+POR,Chris Youngblood,1642959,G,6-4,,24.0,1,Alabama,Signed on 03/03/26
+POR,Jrue Holiday,201950,G,6-4,220,36.0,17,UCLA,Traded from BOS on 07/07/25
+POR,Deni Avdija,1630166,F,6-8,228,25.0,6,Maccabi Tel Aviv,Traded from WAS on 07/06/24
+POR,John Tonje,1642910,G,6-4,218,25.0,1,Wisconsin,Signed on 07/24/26
+POR,Micah Potter,1630695,C,6-9,248,28.0,5,Wisconsin,Awarded on Waivers on 07/10/26
+POR,Ja Morant,1629630,G,6-2,174,26.0,7,Murray State,Traded from MEM on 06/29/26
+POR,Branden Carlson,1642382,C,7-0,220,27.0,2,Utah,Signed on 07/01/26
+POR,Yang Hansen,1642905,C,7-1,270,21.0,1,Zibo,Draft Rights Traded from MEM on 06/25/25
+POR,Shaedon Sharpe,1631101,G,6-5,210,23.0,4,Kentucky,#7 Pick in 2022 Draft
+POR,Donovan Clingan,1642270,C,7-2,280,22.0,2,Connecticut,#7 Pick in 2024 Draft
+POR,Vít Krejčí,1630249,G,6-8,195,26.0,5,Zaragoza,Traded from ATL on 02/01/26
+POR,Toumani Camara,1641739,F,6-7,230,26.0,3,Dayton,Traded from PHX on 09/27/23
+POR,Robert Williams III,1629057,C-F,6-9,249,28.0,8,Texas A&M,Traded from BOS on 10/01/23
+POR,Sidy Cissoko,1631321,G,6-6,220,22.0,3,NBA G League Ignite,Signed on 02/08/25
+SAC,Malik Monk,1628370,G,6-3,200,28.0,9,Kentucky,Signed on 07/06/22
+SAC,Nique Clifford,1642363,G,6-5,175,24.0,1,Colorado State,Draft Rights Traded from OKC on 06/25/25
+SAC,Jonathan Mogbo,1642367,F,6-9,225,24.0,2,San Francisco,Signed on 07/02/26
+SAC,Darius Acuff Jr.,1643411,G,6-2,190,19.0,R,Arkansas,#7 Pick in 2026 Draft
+SAC,Doug McDermott,203926,F,6-7,225,34.0,12,Creighton,Signed on 10/16/24
+SAC,Killian Hayes,1630165,G,6-4,195,25.0,6,Ratiopharm Ulm,Signed on 02/23/26
+SAC,Zach LaVine,203897,G,6-5,200,31.0,12,UCLA,Traded from CHI on 02/03/25
+SAC,Precious Achiuwa,1630173,F,6-8,243,26.0,6,Memphis,Signed on 11/04/25
+SAC,Domantas Sabonis,1627734,F-C,6-10,240,30.0,10,Gonzaga,Traded from IND on 02/08/22
+SAC,Keegan Murray,1631099,F,6-8,225,25.0,4,Iowa,#4 Pick in 2022 Draft
+SAC,Adam Flagler,1641745,G,6-1,180,26.0,2,Baylor,Signed on 07/01/26
+SAC,De'Andre Hunter,1629631,F-G,6-7,221,28.0,7,Virginia,Traded from CLE on 02/01/26
+SAC,Russell Westbrook,201566,G,6-4,200,37.0,18,UCLA,Signed on 10/16/25
+SAC,Drew Eubanks,1629234,F-C,6-10,245,29.0,8,Oregon State,Signed on 07/08/25
+SAC,Patrick Baldwin Jr.,1631116,F,7-0,220,23.0,4,Wisconsin-Milwaukee,Signed on 02/22/26
+SAC,Daeqwon Plowden,1631342,G-F,6-4,216,27.0,2,Bowling Green,Signed on 07/30/25
+SAC,Dylan Cardwell,1642928,C,6-10,255,24.0,1,Auburn,Signed on 07/02/25
+SAC,Alex Karaban,1642284,F,6-8,220,23.0,R,Connecticut,Draft Rights Traded from CLE on 06/24/26
+SAC,Emanuel Sharp,1643567,G,6-3,210,22.0,R,Houston,#45 Pick in 2026 Draft
+SAC,Maxime Raynaud,1642875,C,7-1,250,23.0,1,Stanford,#42 Pick in 2025 Draft
+SAS,Ja'Kobi Gillespie,1643551,G,6-1,186,22.0,R,Tennessee,#42 Pick in 2026 Draft
+SAS,Maliq Brown,1643576,F,6-9,225,22.0,R,Duke,#44 Pick in 2026 Draft
+SAS,Jordan McLaughlin,1629162,G,5-11,185,30.0,7,Southern California,Traded from SAC on 02/03/25
+SAS,Victor Wembanyama,1641705,F-C,7-4,235,22.0,3,Metropolitans 92,#1 Pick in 2023 Draft
+SAS,Dylan Harper,1642844,G,6-5,215,20.0,1,Rutgers,#2 Pick in 2025 Draft
+SAS,Keldon Johnson,1629640,F-G,6-6,220,26.0,7,Kentucky,#29 Pick in 2019 Draft
+SAS,De'Aaron Fox,1628368,G,6-3,185,28.0,9,Kentucky,Traded from SAC on 02/03/25
+SAS,Stephon Castle,1642264,G,6-6,215,21.0,2,Connecticut,#4 Pick in 2024 Draft
+SAS,Luke Kornet,1628436,C-F,7-1,250,31.0,9,Vanderbilt,Signed on 07/07/25
+SAS,Kelly Olynyk,203482,F-C,7-0,240,35.0,13,Gonzaga,Traded from WAS on 07/09/25
+SAS,Tarris Reed Jr.,1643542,C,6-11,265,22.0,R,Connecticut,Draft Rights Traded from DEN on 06/23/26
+SAS,Carter Bryant,1642868,F,6-6,220,20.0,1,Arizona,#14 Pick in 2025 Draft
+SAS,Tobias Harris,202699,F,6-8,226,34.0,15,Tennessee,Signed on 07/06/26
+SAS,Bismack Biyombo,202687,C,6-8,255,33.0,15,Baloncesto Fuenlabrada,Signed on 02/09/25
+SAS,Jayden Quaintance,1643519,F,6-10,255,19.0,R,Kentucky,#20 Pick in 2026 Draft
+SAS,Devin Vassell,1630170,G-F,6-5,200,25.0,6,Florida State,#11 Pick in 2020 Draft
+SAS,David Jones Garcia,1642357,G,6-4,210,24.0,1,Memphis,Signed on 07/23/25
+SAS,Julian Champagnie,1630577,F,6-7,217,25.0,4,St. John's,
+SAS,Harrison Barnes,203084,F,6-7,225,34.0,14,North Carolina,Traded from SAC on 07/08/24
+SAS,Lindy Waters III,1630322,F,6-5,210,29.0,5,Oklahoma State,Signed on 07/24/25
+SAS,Mason Plumlee,203486,F-C,7-0,254,36.0,13,Duke,Signed on 02/17/26
+TOR,Nate Bittle,1642927,C,7-0,215,23.0,R,Oregon,Signed on 07/09/26
+TOR,Jaden Bradley,1643558,G,6-3,200,22.0,R,Arizona,#50 Pick in 2026 Draft
+TOR,A.J. Lawson,1630639,G,6-6,179,26.0,4,South Carolina,Signed on 12/11/24
+TOR,Gradey Dick,1641711,G-F,6-7,200,22.0,3,Kansas,#13 Pick in 2023 Draft
+TOR,Brandon Ingram,1627742,F,6-8,190,28.0,10,Duke,Traded from NOP on 02/06/25
+TOR,Scottie Barnes,1630567,F-G,6-8,237,24.0,5,Florida State,#4 Pick in 2021 Draft
+TOR,Immanuel Quickley,1630193,G,6-2,190,27.0,6,Kentucky,Traded from NYK on 12/30/23
+TOR,RJ Barrett,1629628,F-G,6-6,214,26.0,7,Duke,Traded from NYK on 12/30/23
+TOR,Kyle Anderson,203937,F-G,6-8,230,32.0,12,UCLA,Signed on 07/06/26
+TOR,Ja'Kobe Walter,1642266,G,6-4,180,21.0,2,Baylor,#19 Pick in 2024 Draft
+TOR,Jakob Poeltl,1627751,C,7-0,253,30.0,10,Utah,Traded from SAS on 02/09/23
+TOR,Allen Graves,1643512,F,6-9,225,20.0,R,Santa Clara,#19 Pick in 2026 Draft
+TOR,Jamal Shead,1642347,G,6-1,200,24.0,2,Houston,Draft Rights Traded from SAC on 06/28/24
+TOR,Chucky Hepburn,1642935,G,6-0,190,23.0,1,Louisville,Signed on 07/01/25
+TOR,Collin Murray-Boyles,1642867,F,6-7,245,21.0,1,South Carolina,#9 Pick in 2025 Draft
+TOR,Trayce Jackson-Davis,1631218,F,6-9,245,26.0,3,Indiana,Traded from GSW on 02/05/26
+TOR,Alijah Martin,1642918,G,6-2,210,24.0,1,Florida,#39 Pick in 2025 Draft
+TOR,Jamison Battle,1642419,F,6-7,220,25.0,2,Ohio State,Signed on 07/16/24
+UTA,Hayden Gray,1643060,G,6-4,190,23.0,1,California-San Diego,Signed on 04/11/26
+UTA,Kyle Filipowski,1642271,C,6-11,250,22.0,2,Duke,#32 Pick in 2024 Draft
+UTA,Blake Hinson,1642396,F,6-8,230,26.0,1,Pittsburgh,Signed on 02/09/26
+UTA,Keyonte George,1641718,G,6-4,185,22.0,3,Baylor,#16 Pick in 2023 Draft
+UTA,Cody Williams,1642262,F,6-8,190,21.0,2,Colorado,#10 Pick in 2024 Draft
+UTA,Tamar Bates,1642926,G,6-4,195,23.0,R,Missouri,Signed on 07/03/26
+UTA,Isaiah Collier,1642268,G,6-4,210,21.0,2,Southern California,#29 Pick in 2024 Draft
+UTA,Svi Mykhailiuk,1629004,G-F,6-7,205,29.0,8,Kansas,Signed on 08/10/24
+UTA,Jaxson Hayes,1629637,C-F,7-0,220,26.0,7,Texas,Signed on 07/09/26
+UTA,Mo Bamba,1628964,C,7-0,231,28.0,8,Texas,Signed on 02/26/26
+UTA,Ace Bailey,1642846,F,6-9,200,19.0,1,Rutgers,#5 Pick in 2025 Draft
+UTA,Jaren Jackson Jr.,1628991,F-C,6-10,242,26.0,8,Michigan State,Traded from MEM on 02/03/26
+UTA,Josh Okogie,1629006,G,6-4,213,27.0,8,Georgia Tech,Signed on 07/09/26
+UTA,Bez Mbeng,1643016,G,6-4,185,23.0,1,Yale,Signed on 03/13/26
+UTA,Darryn Peterson,1643408,G,6-6,205,19.0,R,Kansas,#2 Pick in 2026 Draft
+UTA,Lauri Markkanen,1628374,F-C,7-1,240,29.0,9,Arizona,Traded from CLE on 09/03/22
+UTA,Trey Alexander,1641725,G,6-5,185,23.0,2,Creighton,Signed on 07/07/26
+UTA,Brice Sensabaugh,1641729,F,6-6,235,22.0,3,Ohio State,#28 Pick in 2023 Draft
+UTA,Jusuf Nurkić,203994,C,6-11,290,31.0,12,Cedevita,Traded from CHA on 06/29/25
+UTA,Kevin Love,201567,F-C,6-10,251,37.0,18,UCLA,Traded from MIA on 07/07/25
+UTA,John Konchar,1629723,G,6-5,210,30.0,7,Indiana-Purdue Fort Wayne,Traded from MEM on 02/03/26
+UTA,Harrison Ingram,1631127,F,6-5,230,23.0,2,North Carolina,Signed on 07/25/26
+WAS,Julian Reese,1642882,F,6-9,230,23.0,1,Maryland,Signed on 02/28/26
+WAS,Felix Okpara,1643590,C,6-11,235,22.0,R,Tennessee,Draft Rights Traded from ORL on 06/24/26
+WAS,Bilal Coulibaly,1641731,G,6-7,195,22.0,3,Metropolitans 92,Draft Rights Traded from IND on 06/23/23
+WAS,Tristan Vukcevic,1641774,F,7-0,220,23.0,3,Real Madrid,#42 Pick in 2023 Draft
+WAS,Cam Whitmore,1641715,F,6-6,230,22.0,3,Villanova,Traded from HOU on 07/06/25
+WAS,Trae Young,1629027,G,6-2,164,27.0,8,Oklahoma,Traded from ATL on 01/09/26
+WAS,AJ Dybantsa,1643407,F,6-9,210,19.0,R,Brigham Young,#1 Pick in 2026 Draft
+WAS,Jamir Watkins,1642364,F,6-6,210,25.0,1,Florida State,#43 Pick in 2025 Draft
+WAS,Deandre Ayton,1629028,C,7-0,252,28.0,8,Arizona,Traded from LAL on 07/07/26
+WAS,Bub Carrington,1642267,G,6-4,190,21.0,2,Pittsburgh,Draft Rights Traded from POR on 07/06/24
+WAS,Justin Champagnie,1630551,G-F,6-6,206,25.0,5,Pittsburgh,Signed on 02/22/24
+WAS,Tre Johnson,1642848,G,6-5,190,20.0,1,Texas,#6 Pick in 2025 Draft
+WAS,Sharife Cooper,1630536,G,6-0,176,25.0,2,Auburn,Signed on 09/19/25
+WAS,Anthony Gill,1630264,F,6-7,230,33.0,6,Virginia,Signed on 11/30/20
+WAS,Kyshawn George,1642273,F,6-8,200,22.0,2,Miami,Draft Rights Traded from NYK on 06/26/24
+WAS,Khris Middleton,203114,F,6-7,222,34.0,14,Texas A&M,Traded from DAL on 07/08/26
+WAS,Alex Sarr,1642259,C,7-0,205,21.0,2,Washington Wizards,#2 Pick in 2024 Draft
+WAS,Anthony Davis,203076,F-C,6-10,253,33.0,14,Kentucky,Traded from DAL on 02/05/26
+WAS,Will Riley,1642860,F,6-9,180,20.0,1,Illinois-Urbana-Champaign,Draft Rights Traded from UTA on 06/25/25

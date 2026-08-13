@@ -1,0 +1,97 @@
+{
+  "roster": [
+    {
+      "name": "Cade Cunningham",
+      "team": "DET",
+      "min": 2171.67
+    },
+    {
+      "name": "Chet Holmgren",
+      "team": "OKC",
+      "min": 1997.27
+    },
+    {
+      "name": "Donovan Mitchell",
+      "team": "CLE",
+      "min": 2342.06
+    },
+    {
+      "name": "Jalen Brunson",
+      "team": "NYK",
+      "min": 2589.81
+    },
+    {
+      "name": "Jalen Duren",
+      "team": "DET",
+      "min": 1975.85
+    },
+    {
+      "name": "Jalen Johnson",
+      "team": "ATL",
+      "min": 2531.6
+    },
+    {
+      "name": "Jamal Murray",
+      "team": "DEN",
+      "min": 2651.89
+    },
+    {
+      "name": "Jaylen Brown",
+      "team": "BOS",
+      "min": 2442.84
+    },
+    {
+      "name": "Kawhi Leonard",
+      "team": "LAC",
+      "min": 2084.73
+    },
+    {
+      "name": "Kevin Durant",
+      "team": "HOU",
+      "min": 2839.82
+    },
+    {
+      "name": "Luka Don\u010di\u0107",
+      "team": "LAL",
+      "min": 2288.6
+    },
+    {
+      "name": "Nikola Joki\u0107",
+      "team": "DEN",
+      "min": 2264.86
+    },
+    {
+      "name": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "min": 2258.95
+    },
+    {
+      "name": "Tyrese Maxey",
+      "team": "PHI",
+      "min": 2661.12
+    },
+    {
+      "name": "Victor Wembanyama",
+      "team": "SAS",
+      "min": 1865.65
+    }
+  ],
+  "realistic_total_min_used": 19156.123916666664,
+  "direct_ridge_pred": 0.7107062796692689,
+  "reconstructed_need_vector": {
+    "ISOLATION": 0.737093960936045,
+    "PNR_HANDLER": 0.35559868507314196,
+    "PNR_ROLLMAN": 0.5911366529398372,
+    "POST_UP": 0.640863828591097,
+    "SPOT_UP": 0.25432601372760694,
+    "HANDOFF": 0.4066788988863322,
+    "CUT": 0.4346269893500341,
+    "OFF_SCREEN": 0.4602995791943879,
+    "PUT_BACKS": 0.5569129208482761,
+    "RIM_DEFENSE": 0.3422978784325191,
+    "PERIMETER_DEFENSE": 0.3836779442499217,
+    "REBOUNDING": 0.6314932781094136
+  },
+  "augmented_pls_pred": 0.7672537733043905,
+  "blend_pred": 0.7389800264868297
+}

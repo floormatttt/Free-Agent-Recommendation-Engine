@@ -322,6 +322,12 @@ A trimmed export of this run (`rmse`, ridge `coef_mean`, and the ridge calibrati
 
 **Conclusion: yes -- the `NEED_VECTOR` this pipeline produces predicts real winning, well above both a naive baseline and a single composite-need number, and the category with the strongest signal (`PERIMETER_DEFENSE`) is also the category the roster-reconstruction experiment above found hardest to fake from personnel alone.** Neither script's output currently feeds back into the production team-vector or contract-prediction pipelines -- both are standalone validation checks, not inputs to `build_team_vectors.py` or `build_contract_model_v3.py`.
 
+### Data directory reorg: `data/win_pct_model/`
+
+`evaluate_roster_need_win_pct.py` and `predict_win_pct_from_need.py` now write their outputs into `data/win_pct_model/` instead of directly under `data/` -- `roster_reconstructed_win_pct_results.json`, `win_pct_model_results.json`, plus their calibration/artifact companions (`roster_reconstructed_ridge_calibration.json`, `true_need_ridge_calibration.json`, `win_pct_artifact_data.json`). No logic changed, only the output path -- the numbers above (naive 0.1480 / composite 0.0872 / Ridge 0.0630 / ElasticNet 0.0630, `PERIMETER_DEFENSE` coefficient -0.355) are unchanged. Everything downstream of the win-pct model that's been added since (see `win_pct_variants.md`, `team_2026_27_projection.md`, `free_agency_2026.md`) reads/writes within this same directory.
+
+Three variants of the win-pct model itself now exist beyond the Ridge/Elastic Net pair documented above -- a roster-features-only model that skips `NEED_VECTOR` entirely, and a "rating-detour" model that inserts a predicted OFF/DEF rating step in between. See `win_pct_variants.md` for the full comparison and why the rating-detour version is what the free-agency simulation scripts (`free_agency_2026.md`) actually use.
+
 ---
 
 ## Known Limitations
