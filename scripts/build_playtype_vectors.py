@@ -26,6 +26,7 @@ import pandas as pd
 DATA_DIR = Path("data")
 PLAYER_STATS_DIR = DATA_DIR / "player_stats"
 OUT_DIR = DATA_DIR / "player_vectors_full"
+UNDRAFTED_FIRST_YEAR_PATH = DATA_DIR / "undrafted_first_year.csv"
 
 PLAY_TYPES = [
     "ISOLATION",
@@ -72,14 +73,31 @@ def load_season(season: str):
     return pd.read_csv(path, encoding="utf-8")
 
 
-def experience_for(bio_row, season_start_year: int, fallback_years_seen: int) -> float:
-    """Years since being drafted, as a proxy for career stage. Falls back to
-    the number of seasons we actually have on file for undrafted players."""
+def load_undrafted_first_years() -> dict:
+    """PLAYER_ID -> real NBA debut season (FROM_YEAR) for undrafted players,
+    backfilled via nba_api's CommonPlayerInfo (scripts/backfill_undrafted_first_year.py)
+    since these players have no DRAFT_YEAR to derive experience from."""
+    if not UNDRAFTED_FIRST_YEAR_PATH.exists():
+        return {}
+    df = pd.read_csv(UNDRAFTED_FIRST_YEAR_PATH, encoding="utf-8")
+    df = df.dropna(subset=["FROM_YEAR"])
+    return {int(pid): int(year) for pid, year in zip(df["PLAYER_ID"], df["FROM_YEAR"])}
+
+
+def experience_for(bio_row, season_start_year: int, fallback_years_seen: int, first_year_lookup: dict) -> float:
+    """Years since being drafted, as a proxy for career stage. Undrafted
+    players (no DRAFT_YEAR) use their real NBA debut season (FROM_YEAR) from
+    first_year_lookup instead; only players unresolved even there fall back
+    to the number of seasons we actually have on file."""
     draft_year = bio_row.get("DRAFT_YEAR")
     try:
         return max(0.0, season_start_year - float(draft_year))
     except (TypeError, ValueError):
-        return float(fallback_years_seen)
+        pass
+    first_year = first_year_lookup.get(int(bio_row["PLAYER_ID"]))
+    if first_year is not None:
+        return max(0.0, season_start_year - first_year)
+    return float(fallback_years_seen)
 
 
 def build_vectors(season: str) -> pd.DataFrame:
@@ -87,6 +105,8 @@ def build_vectors(season: str) -> pd.DataFrame:
     current = load_season(season_ids[0])
     if current is None:
         raise FileNotFoundError(f"no player_stats file for {season}")
+
+    first_year_lookup = load_undrafted_first_years()
 
     prior_by_id = [
         (f.set_index("PLAYER_ID") if f is not None else None)
@@ -107,7 +127,7 @@ def build_vectors(season: str) -> pd.DataFrame:
             if pf is not None and pid in pf.index:
                 available.append(i)
 
-        experience = experience_for(bio, season_start_year, len(available))
+        experience = experience_for(bio, season_start_year, len(available), first_year_lookup)
         d = decay_strength(experience)
         raw_w = {i: np.exp(-d * i) for i in available}
         wsum = sum(raw_w.values())

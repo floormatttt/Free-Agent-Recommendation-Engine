@@ -99,6 +99,26 @@ Output: `data/free_agency/player_fit_vs_contract.csv` (687 rows, `SEASON` column
 
 ---
 
+## Team-specific price within the band (`apply_team_fit_to_contract_band.py`)
+
+Takes the single LOW/PRED/HIGH band per player from the section above and gives one price per (player, team) instead -- "what would this player cost team X specifically," not just "what's this player worth."
+
+**The obvious approach was tried first and rejected.** Regressing the model's historical `RESIDUAL_PP` (`ACTUAL - PREDICTED`) against `TEAM_Z_SCORE` at each free agent's *real* signing team (826 historical (player, real-team) pairs from `historical_fit_data.json`, 660 matched to a contract prediction) looks real when pooled: r=0.114, p=0.003, slope +0.521pp of cap per SD of `TEAM_Z_SCORE` -- fit reads as a price *premium*, not a hometown discount. A leave-one-cycle-out check breaks it, though: the slope's sign flips in 3 of the 7 cycles, and one single cycle (2023-24, r=0.392) accounts for nearly all of the pooled correlation; a slope fit on the other 6 cycles predicts the held-out cycle's residuals with an out-of-fold correlation ranging from -0.10 to +0.39 with no consistent direction. That's noise, not a validated coefficient to calibrate a shift from.
+
+**What's shipped instead is a labeled heuristic, not a fitted model**: `TEAM_Z_SCORE` (2026-27: `free_agent_team_fit_rankings.csv`; historical: every `(player, team)` row in `historical_fit_data.json`, not just each player's real destination) is squashed into a saturating position within the *existing, residual-quantile-derived* band:
+
+```
+position = clip(TEAM_Z_SCORE / Z_SCALE, -1, 1)          # Z_SCALE = 2.0
+FIT_ADJUSTED_PCT = PRED + position * (HIGH - PRED)        if position >= 0
+                  = PRED + position * (PRED - LOW)         if position <  0
+```
+
+`TEAM_Z_SCORE = 0` (average fit among that player's evaluated teams) recovers the original `PRED` exactly; a team at `|TEAM_Z_SCORE| >= 2` (a genuinely extreme fit) saturates at the band edge rather than extrapolating past it. This is a directional design choice -- "a team-specific standout fit should plausibly move price within the range the model already considers plausible" -- not a statistically demonstrated effect, and is documented as such everywhere it's surfaced (the script's own docstring, and any UI built on top of it).
+
+Output: `data/free_agency/team_fit_adjusted_contract_bands.csv` -- 20,556 rows across all 8 seasons (`SEASON, PLAYER_NAME, TEAM, TEAM_Z_SCORE, PRED_LOW_PCT, PREDICTED_SALARY_PCT_OF_CAP, PRED_HIGH_PCT, FIT_ADJUSTED_PCT`, dollar versions of all four using that season's own cap, plus `ACTUAL_SALARY_PCT_OF_CAP`/`ACTUAL_DOLLARS`). 2026-27 slice: 27 players x 28 teams (756 rows) -- average band width $5.74M, average spread of fit-adjusted price across a player's 28 teams $2.19M (i.e. the heuristic uses roughly 38% of the available band width on average, not routinely saturating). Only 8 of those 27 players' real July-2026 signing team landed in that player's own top-10 teams by fit score -- a reminder that real free-agency destinations are driven by plenty of things (money, role, location, existing relationships) this pipeline doesn't model at all.
+
+---
+
 ## Hand-trimmed frontend exports (not script-generated)
 
 `data/free_agency/artifact_data.json`, `artifact_contract_data.json`, and `artifact_eval_data.json` exist in the data directory but no script in the repo writes those exact filenames -- almost certainly manual/frontend-charting exports, the same pattern `team.md`'s Design Notes already documents for `win_pct_artifact_data.json`. Not regenerated automatically by re-running any pipeline script.
